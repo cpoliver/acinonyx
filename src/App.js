@@ -1,6 +1,7 @@
 import React from 'react';
 
 import { CheatSheet } from './components';
+import cheatSheetData from './cheat-sheet.json';
 
 import './App.css';
 
@@ -12,7 +13,7 @@ const App = () => (
         Beautiful, responsive cheat sheets.
       </p>
     </header>
-    <CheatSheet />
+    <CheatSheet {...cheatSheetData} />
   </div>
 );
 
