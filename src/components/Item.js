@@ -2,6 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { replace } from 'ramda';
 
+import './styles/Item.css';
+
 const formatCode = replace(/kbd|code/g, 'pre');
 
 const Item = ({ command, description }) => (

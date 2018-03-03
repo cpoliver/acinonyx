@@ -1,0 +1,30 @@
+.c-item {
+  align-items: baseline;
+  align-self: flex-start;
+  display: flex;
+}
+
+.c-item--command {
+  align-items: baseline;
+  display: inline-flex;
+  margin-right: .5rem;
+}
+
+.c-item--command > pre {
+  background: #222;
+  color: #eee;
+  margin: .25rem .5rem;
+  padding: .5rem;
+}
+
+.c-item--description {
+  display: inline-flex;
+}
+
+.c-item--description > pre {
+  background: #222;
+  color: #eee;
+  margin: -.1rem .5rem;
+  padding: .15rem;
+}
+
