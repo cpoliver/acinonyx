@@ -3,7 +3,7 @@
   "sections": [
     {
       "heading": "global",
-      "commands": [
+      "items": [
         {
           "command": "<kbd>:help keyword</kbd>",
           "description": "open help for keyword"
@@ -28,7 +28,7 @@
     },
     {
       "heading": "motions",
-      "commands": [
+      "items": [
         {
           "command": "<kbd>h</kbd>",
           "description": "move cursor left",
@@ -305,7 +305,7 @@
     },
     {
       "heading": "insert mode",
-      "commands": [
+      "items": [
         {
           "command": "<kbd>i</kbd>",
           "description": "insert before the cursor"
@@ -342,7 +342,7 @@
     },
     {
       "heading": "editing",
-      "commands": [
+      "items": [
         {
           "command": "<kbd>r</kbd>",
           "description": "replace a single character"
@@ -395,7 +395,7 @@
     },
     {
       "heading": "visual mode",
-      "commands": [
+      "items": [
         {
           "command": "<kbd>v</kbd>",
           "description": "start visual mode, mark lines, then do a command (like y-yank)"
@@ -444,7 +444,7 @@
     },
     {
       "heading": "visual commands",
-      "commands": [
+      "items": [
         {
           "command": "<kbd>&gt;</kbd>",
           "description": "shift text right"
@@ -469,7 +469,7 @@
     },
     {
       "heading": "registers",
-      "commands": [
+      "items": [
         {
           "command": "<kbd>:reg</kbd>",
           "description": "show registers content"
@@ -486,7 +486,7 @@
     },
     {
       "heading": "marks",
-      "commands": [
+      "items": [
         {
           "command": "<kbd>:marks</kbd>",
           "description": "list of marks"
@@ -507,7 +507,7 @@
     },
     {
       "heading": "macros",
-      "commands": [
+      "items": [
         {
           "command": "<kbd>qa</kbd>",
           "description": "record macro a"
@@ -528,7 +528,7 @@
     },
     {
       "heading": "cut & paste",
-      "commands": [
+      "items": [
         {
           "command": "<kbd>yy</kbd>",
           "description": "yank (copy) a line"
@@ -581,7 +581,7 @@
     },
     {
       "heading": "saving & exiting",
-      "commands": [
+      "items": [
         {
           "command": "<kbd>:w</kbd>",
           "description": "write (save) the file, but don't exit"
@@ -610,7 +610,7 @@
     },
     {
       "heading": "search & replace",
-      "commands": [
+      "items": [
         {
           "command": "<kbd>/pattern</kbd>",
           "description": "search for pattern"
@@ -647,7 +647,7 @@
     },
     {
       "heading": "search & replace: multiple files",
-      "commands": [
+      "items": [
         {
           "command": "<kbd>:vimgrep /pattern/ {file}</kbd>",
           "description": "search for pattern in multiple files"
@@ -668,7 +668,7 @@
     },
     {
       "heading": "multiple files",
-      "commands": [
+      "items": [
         {
           "command": "<kbd>:e file</kbd>",
           "description": "edit a file in a new buffer"
@@ -733,7 +733,7 @@
     },
     {
       "heading": "tabs",
-      "commands": [
+      "items": [
         {
           "command": "<kbd>:tabnew</kbd> or <kbd>:tabnew file</kbd>",
           "description": "open a file in a new tab"
