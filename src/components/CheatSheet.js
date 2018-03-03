@@ -1,24 +1,23 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { map } from 'ramda';
 
-import { Section } from './';
+import { mapWithIndex } from '../helpers';
+import { Section, SectionShape } from './Section';
 
 const renderSection = (section, key) => <Section { ...section } key={key} />;
 
 const CheatSheet = ({ title, sections }) => (
   <div className="c-cheat-sheet">
     <h1>{ title }</h1>
-    { map(renderSection, sections) }
+    { mapWithIndex(renderSection, sections) }
   </div>
 );
 
-CheatSheet.propTypes = {
+const CheatSheetShape = {
   title: PropTypes.string.isRequired,
-  sections: PropTypes.arrayOf(PropTypes.shape({
-    heading: PropTypes.string.isRequired,
-    items: PropTypes.array
-  }))
+  sections: PropTypes.arrayOf(SectionShape).isRequired
 };
 
-export { CheatSheet };
+CheatSheet.propTypes = PropTypes.shape(CheatSheetShape);
+
+export { CheatSheet, CheatSheetShape };

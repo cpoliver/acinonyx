@@ -1,10 +1,23 @@
-
 import React from 'react';
+import PropTypes from 'prop-types';
 
-const Section = () => (
+import { mapWithIndex } from '../helpers';
+import { Item, ItemShape } from './Item';
+
+const renderItem = (item, key) => <Item {...item} key={key} />;
+
+const Section = ({ heading, items }) => (
   <div className="c-section">
-    <pre>&lt;Section /&gt;</pre>
+    <h2 className="c-section--heading">{ heading }</h2>
+    { mapWithIndex(renderItem, items) }
   </div>
 );
 
-export { Section };
+const SectionShape = {
+  heading: PropTypes.string.isRequired,
+  items: PropTypes.arrayOf(ItemShape).isRequired
+};
+
+Section.propTypes = PropTypes.shape(SectionShape);
+
+export { Section, SectionShape };
