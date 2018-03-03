@@ -11,7 +11,7 @@
 }
 
 .c-item--command > pre {
-  background: #222;
+  background: #000;
   color: #eee;
   margin: .25rem .5rem;
   padding: .5rem;
@@ -22,7 +22,7 @@
 }
 
 .c-item--description > pre {
-  background: #222;
+  background: #000;
   color: #eee;
   margin: -.1rem .5rem;
   padding: .15rem;

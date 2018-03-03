@@ -4,12 +4,16 @@ import PropTypes from 'prop-types';
 import { mapWithIndex } from '../helpers';
 import { Section, SectionShape } from './Section';
 
+import './styles/CheatSheet.css';
+
 const renderSection = (section, key) => <Section { ...section } key={key} />;
 
 const CheatSheet = ({ title, sections }) => (
   <div className="c-cheat-sheet">
-    <h1>{ title }</h1>
-    { mapWithIndex(renderSection, sections) }
+    <h1 className="c-cheat-sheet--title">{ title }</h1>
+    <div className="c-cheat-sheet--contents">
+      { mapWithIndex(renderSection, sections) }
+    </div>
   </div>
 );
 

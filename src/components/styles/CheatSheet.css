@@ -1,0 +1,15 @@
+.c-cheat-sheet {
+  background: #222;
+}
+
+.c-cheat-sheet--title {
+  color: #eee;
+  display: none;
+}
+
+.c-cheat-sheet--contents {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 100vh;
+}

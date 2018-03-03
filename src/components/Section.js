@@ -4,6 +4,8 @@ import PropTypes from 'prop-types';
 import { mapWithIndex } from '../helpers';
 import { Item, ItemShape } from './Item';
 
+import './styles/Section.css';
+
 const renderItem = (item, key) => <Item {...item} key={key} />;
 
 const Section = ({ heading, items }) => (
