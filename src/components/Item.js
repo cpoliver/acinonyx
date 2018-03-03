@@ -1,10 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { replace } from 'ramda';
+
+const formatCode = replace(/kbd|code/g, 'pre');
 
 const Item = ({ command, description }) => (
   <div className="c-item">
-    <pre className="c-item--command">{ command }</pre>
-    <p className="c-item--description">{ description }</p>
+    <div className="c-item--command" dangerouslySetInnerHTML={{ __html: formatCode(command) }}></div>
+    <div className="c-item--description" dangerouslySetInnerHTML={{ __html: formatCode(description) }}></div>
   </div>
 );
 
