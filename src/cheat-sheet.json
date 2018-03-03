@@ -1,0 +1,728 @@
+{
+  "cut & paste": [
+    {
+      "command": "<kbd>yy</kbd>",
+      "description": "yank (copy) a line"
+    },
+    {
+      "command": "<kbd>2yy</kbd>",
+      "description": "yank (copy) 2 lines"
+    },
+    {
+      "command": "<kbd>yw</kbd>",
+      "description": "yank (copy) the characters of the word from the cursor position to the start of the next word"
+    },
+    {
+      "command": "<kbd>y$</kbd>",
+      "description": "yank (copy) to end of line"
+    },
+    {
+      "command": "<kbd>p</kbd>",
+      "description": "put (paste) the clipboard after cursor"
+    },
+    {
+      "command": "<kbd>P</kbd>",
+      "description": "put (paste) before cursor"
+    },
+    {
+      "command": "<kbd>dd</kbd>",
+      "description": "delete (cut) a line"
+    },
+    {
+      "command": "<kbd>2dd</kbd>",
+      "description": "delete (cut) 2 lines"
+    },
+    {
+      "command": "<kbd>dw</kbd>",
+      "description": "delete (cut) the characters of the word from the cursor position to the start of the next word"
+    },
+    {
+      "command": "<kbd>D</kbd>",
+      "description": "delete (cut) to the end of the line"
+    },
+    {
+      "command": "<kbd>d$</kbd>",
+      "description": "delete (cut) to the end of the line"
+    },
+    {
+      "command": "<kbd>x</kbd>",
+      "description": "delete (cut) character"
+    }
+  ],
+  "editing": [
+    {
+      "command": "<kbd>r</kbd>",
+      "description": "replace a single character"
+    },
+    {
+      "command": "<kbd>J</kbd>",
+      "description": "join line below to the current one with one space in between"
+    },
+    {
+      "command": "<kbd>gJ</kbd>",
+      "description": "join line below to the current one without space in between"
+    },
+    {
+      "command": "<kbd>cc</kbd>",
+      "description": "change (replace) entire line"
+    },
+    {
+      "command": "<kbd>cw</kbd>",
+      "description": "change (replace) to the end of the word"
+    },
+    {
+      "command": "<kbd>c$</kbd>",
+      "description": "change (replace) to the end of the line"
+    },
+    {
+      "command": "<kbd>s</kbd>",
+      "description": "delete character and substitute text"
+    },
+    {
+      "command": "<kbd>S</kbd>",
+      "description": "delete line and substitute text (same as cc)"
+    },
+    {
+      "command": "<kbd>xp</kbd>",
+      "description": "transpose two letters (delete and paste)"
+    },
+    {
+      "command": "<kbd>u</kbd>",
+      "description": "undo"
+    },
+    {
+      "command": "<kbd>Ctrl</kbd> + <kbd>r</kbd>",
+      "description": "redo"
+    },
+    {
+      "command": "<kbd>.</kbd>",
+      "description": "repeat last command"
+    }
+  ],
+  "global": [
+    {
+      "command": "<kbd>:help keyword</kbd>",
+      "description": "open help for keyword"
+    },
+    {
+      "command": "<kbd>:o file</kbd>",
+      "description": "open file"
+    },
+    {
+      "command": "<kbd>:saveas file</kbd>",
+      "description": "save file as"
+    },
+    {
+      "command": "<kbd>:close</kbd>",
+      "description": "close current pane"
+    },
+    {
+      "command": "<kbd>K</kbd>",
+      "description": "open man page for word under the cursor"
+    }
+  ],
+  "insert mode": [
+    {
+      "command": "<kbd>i</kbd>",
+      "description": "insert before the cursor"
+    },
+    {
+      "command": "<kbd>I</kbd>",
+      "description": "insert at the beginning of the line"
+    },
+    {
+      "command": "<kbd>a</kbd>",
+      "description": "insert (append) after the cursor"
+    },
+    {
+      "command": "<kbd>A</kbd>",
+      "description": "insert (append) at the end of the line"
+    },
+    {
+      "command": "<kbd>o</kbd>",
+      "description": "append (open) a new line below the current line"
+    },
+    {
+      "command": "<kbd>O</kbd>",
+      "description": "append (open) a new line above the current line"
+    },
+    {
+      "command": "<kbd>ea</kbd>",
+      "description": "insert (append) at the end of the word"
+    },
+    {
+      "command": "<kbd>Esc</kbd>",
+      "description": "exit insert mode"
+    }
+  ],
+  "macros": [
+    {
+      "command": "<kbd>qa</kbd>",
+      "description": "record macro a"
+    },
+    {
+      "command": "<kbd>q</kbd>",
+      "description": "stop recording macro"
+    },
+    {
+      "command": "<kbd>@a</kbd>",
+      "description": "run macro a"
+    },
+    {
+      "command": "<kbd>@@</kbd>",
+      "description": "rerun last run macro"
+    }
+  ],
+  "marks": [
+    {
+      "command": "<kbd>:marks</kbd>",
+      "description": "list of marks"
+    },
+    {
+      "command": "<kbd>ma</kbd>",
+      "description": "set current position for mark A"
+    },
+    {
+      "command": "<kbd>`a</kbd>",
+      "description": "jump to position of mark A"
+    },
+    {
+      "command": "<kbd>y`a</kbd>",
+      "description": "yank text to position of mark A"
+    }
+  ],
+  "motions": [
+    {
+      "command": "<kbd>h</kbd>",
+      "description": "move cursor left",
+      "motion": {
+        "direction": "forwards",
+        "scope": "relative, character"
+      }
+    },
+    {
+      "command": "<kbd>j</kbd>",
+      "description": "move cursor down",
+      "motion": {
+        "direction": "forwards",
+        "scope": "relative, line"
+      }
+    },
+    {
+      "command": "<kbd>k</kbd>",
+      "description": "move cursor up",
+      "motion": {
+        "direction": "backwards",
+        "scope": "relative, line"
+      }
+    },
+    {
+      "command": "<kbd>l</kbd>",
+      "description": "move cursor right",
+      "motion": {
+        "direction": "backwards",
+        "scope": "relative, character"
+      }
+    },
+    {
+      "command": "<kbd>H</kbd>",
+      "description": "move to top of screen",
+      "motion": {
+        "direction": "backwards",
+        "scope": "view"
+      }
+    },
+    {
+      "command": "<kbd>M</kbd>",
+      "description": "move to middle of screen",
+      "motion": {
+        "direction": "-",
+        "scope": "view"
+      }
+    },
+    {
+      "command": "<kbd>L</kbd>",
+      "description": "move to bottom of screen",
+      "motion": {
+        "direction": "forwards",
+        "scope": "view"
+      }
+    },
+    {
+      "command": "<kbd>w</kbd>",
+      "description": "jump forwards to the start of a word",
+      "motion": {
+        "direction": "forwards",
+        "scope": "word"
+      }
+    },
+    {
+      "command": "<kbd>W</kbd>",
+      "description": "jump forwards to the start of a word (words can contain punctuation)",
+      "motion": {
+        "direction": "forwards",
+        "scope": "word, with punctuation"
+      }
+    },
+    {
+      "command": "<kbd>e</kbd>",
+      "description": "jump forwards to the end of a word",
+      "motion": {
+        "direction": "forwards",
+        "scope": "word"
+      }
+    },
+    {
+      "command": "<kbd>E</kbd>",
+      "description": "jump forwards to the end of a word (words can contain punctuation)",
+      "motion": {
+        "direction": "forwards",
+        "scope": "word, with punctuation"
+      }
+    },
+    {
+      "command": "<kbd>b</kbd>",
+      "description": "jump backwards to the start of a word",
+      "motion": {
+        "direction": "backwards",
+        "scope": "word"
+      }
+    },
+    {
+      "command": "<kbd>B</kbd>",
+      "description": "jump backwards to the start of a word (words can contain punctuation)",
+      "motion": {
+        "direction": "backwards",
+        "scope": "word, with punctuation"
+      }
+    },
+    {
+      "command": "<kbd>%</kbd>",
+      "description": "move to matching character (default supported pairs: '()', '{}', '[]' – use <code>:h matchpairs</code> in vim for more info)",
+      "motion": {
+        "direction": "-",
+        "scope": "character pair"
+      }
+    },
+    {
+      "command": "<kbd>0</kbd>",
+      "description": "jump to the start of the line",
+      "motion": {
+        "direction": "backwards",
+        "scope": "line"
+      }
+    },
+    {
+      "command": "<kbd>^</kbd>",
+      "description": "jump to the first non-blank character of the line",
+      "motion": {
+        "direction": "-",
+        "scope": "line"
+      }
+    },
+    {
+      "command": "<kbd>$</kbd>",
+      "description": "jump to the end of the line",
+      "motion": {
+        "direction": "forwards",
+        "scope": "line"
+      }
+    },
+    {
+      "command": "<kbd>g_</kbd>",
+      "description": "jump to the last non-blank character of the line",
+      "motion": {
+        "direction": "-",
+        "scope": "line"
+      }
+    },
+    {
+      "command": "<kbd>gg</kbd>",
+      "description": "go to the first line of the document",
+      "motion": {
+        "direction": "backwards",
+        "scope": "document"
+      }
+    },
+    {
+      "command": "<kbd>G</kbd>",
+      "description": "go to the last line of the document",
+      "motion": {
+        "direction": "forwards",
+        "scope": "document"
+      }
+    },
+    {
+      "command": "<kbd>5G</kbd>",
+      "description": "go to line 5",
+      "motion": {
+        "direction": "-",
+        "scope": "absolute"
+      }
+    },
+    {
+      "command": "<kbd>fx</kbd>",
+      "description": "jump to next occurrence of character x",
+      "motion": {
+        "direction": "forwards",
+        "scope": "find, line"
+      }
+    },
+    {
+      "command": "<kbd>tx</kbd>",
+      "description": "jump to before next occurrence of character x",
+      "motion": {
+        "direction": "forwards",
+        "scope": "find, line"
+      }
+    },
+    {
+      "command": "<kbd>Fx</kbd>",
+      "description": "jump to previous occurence of character x",
+      "motion": {
+        "direction": "backwards",
+        "scope": "find, line"
+      }
+    },
+    {
+      "command": "<kbd>Tx</kbd>",
+      "description": "jump to after previous occurence of character x",
+      "motion": {
+        "direction": "backwards",
+        "scope": "find, line"
+      }
+    },
+    {
+      "command": "<kbd>;</kbd>",
+      "description": "repeat previous f, t, F or T movement",
+      "motion": {
+        "direction": "forwards",
+        "scope": "find, line"
+      }
+    },
+    {
+      "command": "<kbd>,</kbd>",
+      "description": "repeat previous f, t, F or T movement, backwards",
+      "motion": {
+        "direction": "backwards",
+        "scope": "find, line"
+      }
+    },
+    {
+      "command": "<kbd>}</kbd>",
+      "description": "jump to next paragraph (or function/block, when editing code)",
+      "motion": {
+        "direction": "forwards",
+        "scope": "paragraph"
+      }
+    },
+    {
+      "command": "<kbd>{</kbd>",
+      "description": "jump to previous paragraph (or function/block, when editing code)",
+      "motion": {
+        "direction": "backwards",
+        "scope": "paragraph"
+      }
+    },
+    {
+      "command": "<kbd>zz</kbd>",
+      "description": "center cursor on screen",
+      "motion": {
+        "direction": "-",
+        "scope": "view"
+      }
+    },
+    {
+      "command": "<kbd>Ctrl</kbd> + <kbd>b</kbd>",
+      "description": "move back one full screen",
+      "motion": {
+        "direction": "backwards",
+        "scope": "view"
+      }
+    },
+    {
+      "command": "<kbd>Ctrl</kbd> + <kbd>f</kbd>",
+      "description": "move forward one full screen",
+      "motion": {
+        "direction": "forwards",
+        "scope": "view"
+      }
+    },
+    {
+      "command": "<kbd>Ctrl</kbd> + <kbd>d</kbd>",
+      "description": "move forward 1/2 a screen",
+      "motion": {
+        "direction": "forwards",
+        "scope": "view"
+      }
+    },
+    {
+      "command": "<kbd>Ctrl</kbd> + <kbd>u</kbd>",
+      "description": "move back 1/2 a screen",
+      "motion": {
+        "direction": "backwards",
+        "scope": "view"
+      }
+    }
+  ],
+  "multiple files": [
+    {
+      "command": "<kbd>:e file</kbd>",
+      "description": "edit a file in a new buffer"
+    },
+    {
+      "command": "<kbd>:bnext</kbd> or <kbd>:bn</kbd>",
+      "description": "go to the next buffer"
+    },
+    {
+      "command": "<kbd>:bprev</kbd> or <kbd>:bp</kbd>",
+      "description": "go to the previous buffer"
+    },
+    {
+      "command": "<kbd>:bd</kbd>",
+      "description": "delete a buffer (close a file)"
+    },
+    {
+      "command": "<kbd>:ls</kbd>",
+      "description": "list all open buffers"
+    },
+    {
+      "command": "<kbd>:sp file</kbd>",
+      "description": "open a file in a new buffer and split window"
+    },
+    {
+      "command": "<kbd>:vsp file</kbd>",
+      "description": "open a file in a new buffer and vertically split window"
+    },
+    {
+      "command": "<kbd>Ctrl</kbd> + <kbd>ws</kbd>",
+      "description": "split window"
+    },
+    {
+      "command": "<kbd>Ctrl</kbd> + <kbd>ww</kbd>",
+      "description": "switch windows"
+    },
+    {
+      "command": "<kbd>Ctrl</kbd> + <kbd>wq</kbd>",
+      "description": "quit a window"
+    },
+    {
+      "command": "<kbd>Ctrl</kbd> + <kbd>wv</kbd>",
+      "description": "split window vertically"
+    },
+    {
+      "command": "<kbd>Ctrl</kbd> + <kbd>wh</kbd>",
+      "description": "move cursor to the left window (vertical split)"
+    },
+    {
+      "command": "<kbd>Ctrl</kbd> + <kbd>wl</kbd>",
+      "description": "move cursor to the right window (vertical split)"
+    },
+    {
+      "command": "<kbd>Ctrl</kbd> + <kbd>wj</kbd>",
+      "description": "move cursor to the window below (horizontal split)"
+    },
+    {
+      "command": "<kbd>Ctrl</kbd> + <kbd>wk</kbd>",
+      "description": "move cursor to the window above (horizontal split)"
+    }
+  ],
+  "registers": [
+    {
+      "command": "<kbd>:reg</kbd>",
+      "description": "show registers content"
+    },
+    {
+      "command": "<kbd>\"xy</kbd>",
+      "description": "yank into register x"
+    },
+    {
+      "command": "<kbd>\"xp</kbd>",
+      "description": "paste contents of register x"
+    }
+  ],
+  "saving & exiting": [
+    {
+      "command": "<kbd>:w</kbd>",
+      "description": "write (save) the file, but don't exit"
+    },
+    {
+      "command": "<kbd>:w !sudo tee %</kbd>",
+      "description": "write out the current file using sudo"
+    },
+    {
+      "command": "<kbd>:wq</kbd> or <kbd>:x</kbd> or <kbd>ZZ</kbd>",
+      "description": "write (save) and quit"
+    },
+    {
+      "command": "<kbd>:q</kbd>",
+      "description": "quit (fails if there are unsaved changes)"
+    },
+    {
+      "command": "<kbd>:q!</kbd> or <kbd>ZQ</kbd>",
+      "description": "quit and throw away unsaved changes"
+    },
+    {
+      "command": "<kbd>:wqa</kbd>",
+      "description": "write (save) and quit on all tabs"
+    }
+  ],
+  "search & replace": [
+    {
+      "command": "<kbd>/pattern</kbd>",
+      "description": "search for pattern"
+    },
+    {
+      "command": "<kbd>?pattern</kbd>",
+      "description": "search backward for pattern"
+    },
+    {
+      "command": "<kbd>\\vpattern</kbd>",
+      "description": "very magic' pattern: non-alphanumeric characters are interpreted as special regex symbols (no escaping needed)"
+    },
+    {
+      "command": "<kbd>n</kbd>",
+      "description": "repeat search in same direction"
+    },
+    {
+      "command": "<kbd>N</kbd>",
+      "description": "repeat search in opposite direction"
+    },
+    {
+      "command": "<kbd>:%s/old/new/g</kbd>",
+      "description": "replace all old with new throughout file"
+    },
+    {
+      "command": "<kbd>:%s/old/new/gc</kbd>",
+      "description": "replace all old with new throughout file with confirmations"
+    },
+    {
+      "command": "<kbd>:noh</kbd>",
+      "description": "remove highlighting of search matches"
+    }
+  ],
+  "search & replace: multiple files": [
+    {
+      "command": "<kbd>:vimgrep /pattern/ {file}</kbd>",
+      "description": "search for pattern in multiple files"
+    },
+    {
+      "command": "<kbd>:cn</kbd>",
+      "description": "jump to the next match"
+    },
+    {
+      "command": "<kbd>:cp</kbd>",
+      "description": "jump to the previous match"
+    },
+    {
+      "command": "<kbd>:copen</kbd>",
+      "description": "open a window containing the list of matches"
+    }
+  ],
+  "tabs": [
+    {
+      "command": "<kbd>:tabnew</kbd> or <kbd>:tabnew file</kbd>",
+      "description": "open a file in a new tab"
+    },
+    {
+      "command": "<kbd>Ctrl</kbd> + <kbd>wT</kbd>",
+      "description": "move the current split window into its own tab"
+    },
+    {
+      "command": "<kbd>gt</kbd> or <kbd>:tabnext</kbd> or <kbd>:tabn</kbd>",
+      "description": "move to the next tab"
+    },
+    {
+      "command": "<kbd>gT</kbd> or <kbd>:tabprev</kbd> or <kbd>:tabp</kbd>",
+      "description": "move to the previous tab"
+    },
+    {
+      "command": "<kbd>#gt</kbd>",
+      "description": "move to tab number #"
+    },
+    {
+      "command": "<kbd>:tabmove #</kbd>",
+      "description": "move current tab to the #th position (indexed from 0)"
+    },
+    {
+      "command": "<kbd>:tabclose</kbd> or <kbd>:tabc</kbd>",
+      "description": "close the current tab and all its windows"
+    },
+    {
+      "command": "<kbd>:tabonly</kbd> or <kbd>:tabo</kbd>",
+      "description": "close all tabs except for the current one"
+    },
+    {
+      "command": "<kbd>:tabdo</kbd> command",
+      "description": "run the <code>command</code> on all tabs (e.g. <code>:tabdo q</code> – closes all opened tabs)"
+    }
+  ],
+  "visual commands": [
+    {
+      "command": "<kbd>&gt;</kbd>",
+      "description": "shift text right"
+    },
+    {
+      "command": "<kbd>&lt;</kbd>",
+      "description": "shift text left"
+    },
+    {
+      "command": "<kbd>y</kbd>",
+      "description": "yank (copy) marked text"
+    },
+    {
+      "command": "<kbd>d</kbd>",
+      "description": "delete marked text"
+    },
+    {
+      "command": "<kbd>~</kbd>",
+      "description": "switch case"
+    }
+  ],
+  "visual mode": [
+    {
+      "command": "<kbd>v</kbd>",
+      "description": "start visual mode, mark lines, then do a command (like y-yank)"
+    },
+    {
+      "command": "<kbd>V</kbd>",
+      "description": "start linewise visual mode"
+    },
+    {
+      "command": "<kbd>o</kbd>",
+      "description": "move to other end of marked area"
+    },
+    {
+      "command": "<kbd>Ctrl</kbd> + <kbd>v</kbd>",
+      "description": "start visual block mode"
+    },
+    {
+      "command": "<kbd>O</kbd>",
+      "description": "move to other corner of block"
+    },
+    {
+      "command": "<kbd>aw</kbd>",
+      "description": "mark a word"
+    },
+    {
+      "command": "<kbd>ab</kbd>",
+      "description": "a block with ()"
+    },
+    {
+      "command": "<kbd>aB</kbd>",
+      "description": "a block with {}"
+    },
+    {
+      "command": "<kbd>ib</kbd>",
+      "description": "inner block with ()"
+    },
+    {
+      "command": "<kbd>iB</kbd>",
+      "description": "inner block with {}"
+    },
+    {
+      "command": "<kbd>Esc</kbd>",
+      "description": "exit visual mode"
+    }
+  ]
+}
