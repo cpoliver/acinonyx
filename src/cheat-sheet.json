@@ -5,23 +5,23 @@
       "heading": "global",
       "items": [
         {
-          "command": ":help keyword",
+          "commands": [":help keyword"],
           "description": "open help for keyword"
         },
         {
-          "command": ":o file",
+          "commands": [":o file"],
           "description": "open file"
         },
         {
-          "command": ":saveas file",
+          "commands": [":saveas file"],
           "description": "save file as"
         },
         {
-          "command": ":close",
+          "commands": [":close"],
           "description": "close current pane"
         },
         {
-          "command": "K",
+          "commands": ["K"],
           "description": "open man page for word under the cursor"
         }
       ]
@@ -197,35 +197,35 @@
       "heading": "insert mode",
       "items": [
         {
-          "command": "i",
+          "commands": ["i"],
           "description": "insert before the cursor"
         },
         {
-          "command": "I",
+          "commands": ["I"],
           "description": "insert at the beginning of the line"
         },
         {
-          "command": "a",
+          "commands": ["a"],
           "description": "insert (append) after the cursor"
         },
         {
-          "command": "A",
+          "commands": ["A"],
           "description": "insert (append) at the end of the line"
         },
         {
-          "command": "o",
+          "commands": ["o"],
           "description": "append (open) a new line below the current line"
         },
         {
-          "command": "O",
+          "commands": ["O"],
           "description": "append (open) a new line above the current line"
         },
         {
-          "command": "ea",
+          "commands": ["ea"],
           "description": "insert (append) at the end of the word"
         },
         {
-          "command": "Esc",
+          "commands": ["Esc"],
           "description": "exit insert mode"
         }
       ]
@@ -234,51 +234,51 @@
       "heading": "editing",
       "items": [
         {
-          "command": "r",
+          "commands": ["r"],
           "description": "replace a single character"
         },
         {
-          "command": "J",
+          "commands": ["J"],
           "description": "join line below to the current one with one space in between"
         },
         {
-          "command": "gJ",
+          "commands": ["gJ"],
           "description": "join line below to the current one without space in between"
         },
         {
-          "command": "cc",
+          "commands": ["cc"],
           "description": "change (replace) entire line"
         },
         {
-          "command": "cw",
+          "commands": ["cw"],
           "description": "change (replace) to the end of the word"
         },
         {
-          "command": "c$",
+          "commands": ["c$"],
           "description": "change (replace) to the end of the line"
         },
         {
-          "command": "s",
+          "commands": ["s"],
           "description": "delete character and substitute text"
         },
         {
-          "command": "S",
+          "commands": ["S"],
           "description": "delete line and substitute text (same as cc)"
         },
         {
-          "command": "xp",
+          "commands": ["xp"],
           "description": "transpose two letters (delete and paste)"
         },
         {
-          "command": "u",
+          "commands": ["u"],
           "description": "undo"
         },
         {
-          "command": "Ctrl + r",
+          "commands": ["Ctrl + r"],
           "description": "redo"
         },
         {
-          "command": ".",
+          "commands": ["."],
           "description": "repeat last command"
         }
       ]
@@ -287,47 +287,47 @@
       "heading": "visual mode",
       "items": [
         {
-          "command": "v",
+          "commands": ["v"],
           "description": "start visual mode, mark lines, then do a command (like y-yank)"
         },
         {
-          "command": "V",
+          "commands": ["V"],
           "description": "start linewise visual mode"
         },
         {
-          "command": "o",
+          "commands": ["o"],
           "description": "move to other end of marked area"
         },
         {
-          "command": "Ctrl + v",
+          "commands": ["Ctrl + v"],
           "description": "start visual block mode"
         },
         {
-          "command": "O",
+          "commands": ["O"],
           "description": "move to other corner of block"
         },
         {
-          "command": "aw",
+          "commands": ["aw"],
           "description": "mark a word"
         },
         {
-          "command": "ab",
+          "commands": ["ab"],
           "description": "a block with ()"
         },
         {
-          "command": "aB",
+          "commands": ["aB"],
           "description": "a block with {}"
         },
         {
-          "command": "ib",
+          "commands": ["ib"],
           "description": "inner block with ()"
         },
         {
-          "command": "iB",
+          "commands": ["iB"],
           "description": "inner block with {}"
         },
         {
-          "command": "Esc",
+          "commands": ["Esc"],
           "description": "exit visual mode"
         }
       ]
@@ -336,23 +336,23 @@
       "heading": "visual commands",
       "items": [
         {
-          "command": "&gt;",
+          "commands": ["&gt;"],
           "description": "shift text right"
         },
         {
-          "command": "&lt;",
+          "commands": ["&lt;"],
           "description": "shift text left"
         },
         {
-          "command": "y",
+          "commands": ["y"],
           "description": "yank (copy) marked text"
         },
         {
-          "command": "d",
+          "commands": ["d"],
           "description": "delete marked text"
         },
         {
-          "command": "~",
+          "commands": ["~"],
           "description": "switch case"
         }
       ]
@@ -361,15 +361,15 @@
       "heading": "registers",
       "items": [
         {
-          "command": ":reg",
+          "commands": [":reg"],
           "description": "show registers content"
         },
         {
-          "command": "\"xy",
+          "commands": ["\"xy"],
           "description": "yank into register x"
         },
         {
-          "command": "\"xp",
+          "commands": ["\"xp"],
           "description": "paste contents of register x"
         }
       ]
@@ -378,19 +378,19 @@
       "heading": "marks",
       "items": [
         {
-          "command": ":marks",
+          "commands": [":marks"],
           "description": "list of marks"
         },
         {
-          "command": "ma",
+          "commands": ["ma"],
           "description": "set current position for mark A"
         },
         {
-          "command": "`a",
+          "commands": ["`a"],
           "description": "jump to position of mark A"
         },
         {
-          "command": "y`a",
+          "commands": ["y`a"],
           "description": "yank text to position of mark A"
         }
       ]
@@ -399,19 +399,19 @@
       "heading": "macros",
       "items": [
         {
-          "command": "qa",
+          "commands": ["qa"],
           "description": "record macro a"
         },
         {
-          "command": "q",
+          "commands": ["q"],
           "description": "stop recording macro"
         },
         {
-          "command": "@a",
+          "commands": ["@a"],
           "description": "run macro a"
         },
         {
-          "command": "@@",
+          "commands": ["@@"],
           "description": "rerun last run macro"
         }
       ]
@@ -420,51 +420,51 @@
       "heading": "cut & paste",
       "items": [
         {
-          "command": "yy",
+          "commands": ["yy"],
           "description": "yank (copy) a line"
         },
         {
-          "command": "2yy",
+          "commands": ["2yy"],
           "description": "yank (copy) 2 lines"
         },
         {
-          "command": "yw",
+          "commands": ["yw"],
           "description": "yank (copy) the characters of the word from the cursor position to the start of the next word"
         },
         {
-          "command": "y$",
+          "commands": ["y$"],
           "description": "yank (copy) to end of line"
         },
         {
-          "command": "p",
+          "commands": ["p"],
           "description": "put (paste) the clipboard after cursor"
         },
         {
-          "command": "P",
+          "commands": ["P"],
           "description": "put (paste) before cursor"
         },
         {
-          "command": "dd",
+          "commands": ["dd"],
           "description": "delete (cut) a line"
         },
         {
-          "command": "2dd",
+          "commands": ["2dd"],
           "description": "delete (cut) 2 lines"
         },
         {
-          "command": "dw",
+          "commands": ["dw"],
           "description": "delete (cut) the characters of the word from the cursor position to the start of the next word"
         },
         {
-          "command": "D",
+          "commands": ["D"],
           "description": "delete (cut) to the end of the line"
         },
         {
-          "command": "d$",
+          "commands": ["d$"],
           "description": "delete (cut) to the end of the line"
         },
         {
-          "command": "x",
+          "commands": ["x"],
           "description": "delete (cut) character"
         }
       ]
@@ -473,27 +473,27 @@
       "heading": "saving & exiting",
       "items": [
         {
-          "command": ":w",
+          "commands": [":w"],
           "description": "write (save) the file, but don't exit"
         },
         {
-          "command": ":w !sudo tee %",
+          "commands": [":w !sudo tee %"],
           "description": "write out the current file using sudo"
         },
         {
-          "command": ":wq or :x or ZZ",
+          "commands": [":wq or :x or ZZ"],
           "description": "write (save) and quit"
         },
         {
-          "command": ":q",
+          "commands": [":q"],
           "description": "quit (fails if there are unsaved changes)"
         },
         {
-          "command": ":q! or ZQ",
+          "commands": [":q! or ZQ"],
           "description": "quit and throw away unsaved changes"
         },
         {
-          "command": ":wqa",
+          "commands": [":wqa"],
           "description": "write (save) and quit on all tabs"
         }
       ]
@@ -502,35 +502,35 @@
       "heading": "search & replace",
       "items": [
         {
-          "command": "/pattern",
+          "commands": ["/pattern"],
           "description": "search for pattern"
         },
         {
-          "command": "?pattern",
+          "commands": ["?pattern"],
           "description": "search backward for pattern"
         },
         {
-          "command": "\\vpattern",
+          "commands": ["\\vpattern"],
           "description": "very magic' pattern: non-alphanumeric characters are interpreted as special regex symbols (no escaping needed)"
         },
         {
-          "command": "n",
+          "commands": ["n"],
           "description": "repeat search in same direction"
         },
         {
-          "command": "N",
+          "commands": ["N"],
           "description": "repeat search in opposite direction"
         },
         {
-          "command": ":%s/old/new/g",
+          "commands": [":%s/old/new/g"],
           "description": "replace all old with new throughout file"
         },
         {
-          "command": ":%s/old/new/gc",
+          "commands": [":%s/old/new/gc"],
           "description": "replace all old with new throughout file with confirmations"
         },
         {
-          "command": ":noh",
+          "commands": [":noh"],
           "description": "remove highlighting of search matches"
         }
       ]
@@ -539,19 +539,19 @@
       "heading": "search & replace: multiple files",
       "items": [
         {
-          "command": ":vimgrep /pattern/ {file}",
+          "commands": [":vimgrep /pattern/ {file}"],
           "description": "search for pattern in multiple files"
         },
         {
-          "command": ":cn",
+          "commands": [":cn"],
           "description": "jump to the next match"
         },
         {
-          "command": ":cp",
+          "commands": [":cp"],
           "description": "jump to the previous match"
         },
         {
-          "command": ":copen",
+          "commands": [":copen"],
           "description": "open a window containing the list of matches"
         }
       ]
@@ -560,63 +560,63 @@
       "heading": "multiple files",
       "items": [
         {
-          "command": ":e file",
+          "commands": [":e file"],
           "description": "edit a file in a new buffer"
         },
         {
-          "command": ":bnext or :bn",
+          "commands": [":bnext or :bn"],
           "description": "go to the next buffer"
         },
         {
-          "command": ":bprev or :bp",
+          "commands": [":bprev or :bp"],
           "description": "go to the previous buffer"
         },
         {
-          "command": ":bd",
+          "commands": [":bd"],
           "description": "delete a buffer (close a file)"
         },
         {
-          "command": ":ls",
+          "commands": [":ls"],
           "description": "list all open buffers"
         },
         {
-          "command": ":sp file",
+          "commands": [":sp file"],
           "description": "open a file in a new buffer and split window"
         },
         {
-          "command": ":vsp file",
+          "commands": [":vsp file"],
           "description": "open a file in a new buffer and vertically split window"
         },
         {
-          "command": "Ctrl + ws",
+          "commands": ["Ctrl + ws"],
           "description": "split window"
         },
         {
-          "command": "Ctrl + ww",
+          "commands": ["Ctrl + ww"],
           "description": "switch windows"
         },
         {
-          "command": "Ctrl + wq",
+          "commands": ["Ctrl + wq"],
           "description": "quit a window"
         },
         {
-          "command": "Ctrl + wv",
+          "commands": ["Ctrl + wv"],
           "description": "split window vertically"
         },
         {
-          "command": "Ctrl + wh",
+          "commands": ["Ctrl + wh"],
           "description": "move cursor to the left window (vertical split)"
         },
         {
-          "command": "Ctrl + wl",
+          "commands": ["Ctrl + wl"],
           "description": "move cursor to the right window (vertical split)"
         },
         {
-          "command": "Ctrl + wj",
+          "commands": ["Ctrl + wj"],
           "description": "move cursor to the window below (horizontal split)"
         },
         {
-          "command": "Ctrl + wk",
+          "commands": ["Ctrl + wk"],
           "description": "move cursor to the window above (horizontal split)"
         }
       ]
@@ -625,39 +625,39 @@
       "heading": "tabs",
       "items": [
         {
-          "command": ":tabnew or :tabnew file",
+          "commands": [":tabnew or :tabnew file"],
           "description": "open a file in a new tab"
         },
         {
-          "command": "Ctrl + wT",
+          "commands": ["Ctrl + wT"],
           "description": "move the current split window into its own tab"
         },
         {
-          "command": "gt or :tabnext or :tabn",
+          "commands": ["gt or :tabnext or :tabn"],
           "description": "move to the next tab"
         },
         {
-          "command": "gT or :tabprev or :tabp",
+          "commands": ["gT or :tabprev or :tabp"],
           "description": "move to the previous tab"
         },
         {
-          "command": "#gt",
+          "commands": ["#gt"],
           "description": "move to tab number #"
         },
         {
-          "command": ":tabmove #",
+          "commands": [":tabmove #"],
           "description": "move current tab to the #th position (indexed from 0)"
         },
         {
-          "command": ":tabclose or :tabc",
+          "commands": [":tabclose or :tabc"],
           "description": "close the current tab and all its windows"
         },
         {
-          "command": ":tabonly or :tabo",
+          "commands": [":tabonly or :tabo"],
           "description": "close all tabs except for the current one"
         },
         {
-          "command": ":tabdo command",
+          "commands": [":tabdo command"],
           "description": "run the <code>command</code> on all tabs (e.g. <code>:tabdo q</code> – closes all opened tabs)"
         }
       ]
