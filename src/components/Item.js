@@ -2,13 +2,17 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { replace } from 'ramda';
 
+import { mapWithIndex } from '../helpers';
+
 import './styles/Item.css';
 
-const formatCode = replace(/kbd|code/g, 'pre');
+const formatCode = replace(/code/g, 'pre');
 
-const Item = ({ command, description }) => (
+const renderCommand = (command, key) => <pre key={key}>{ command }</pre>
+
+const Item = ({ commands, description }) => (
   <div className="c-item">
-    <div className="c-item--command" dangerouslySetInnerHTML={{ __html: formatCode(command) }}></div>
+    <div className="c-item--command">{ mapWithIndex(renderCommand, commands) }</div>
     <div className="c-item--description" dangerouslySetInnerHTML={{ __html: formatCode(description) }}></div>
   </div>
 );
