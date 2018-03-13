@@ -5,23 +5,23 @@
       "heading": "global",
       "items": [
         {
-          "command": "<kbd>:help keyword</kbd>",
+          "command": ":help keyword",
           "description": "open help for keyword"
         },
         {
-          "command": "<kbd>:o file</kbd>",
+          "command": ":o file",
           "description": "open file"
         },
         {
-          "command": "<kbd>:saveas file</kbd>",
+          "command": ":saveas file",
           "description": "save file as"
         },
         {
-          "command": "<kbd>:close</kbd>",
+          "command": ":close",
           "description": "close current pane"
         },
         {
-          "command": "<kbd>K</kbd>",
+          "command": "K",
           "description": "open man page for word under the cursor"
         }
       ]
@@ -30,7 +30,7 @@
       "heading": "motions",
       "items": [
         {
-          "command": "<kbd>h</kbd>",
+          "command": "h",
           "description": "move cursor left",
           "motion": {
             "scope": "relative, character",
@@ -38,7 +38,7 @@
           }
         },
         {
-          "command": "<kbd>j</kbd>",
+          "command": "j",
           "description": "move cursor down",
           "motion": {
             "scope": "relative, line",
@@ -46,7 +46,7 @@
           }
         },
         {
-          "command": "<kbd>k</kbd>",
+          "command": "k",
           "description": "move cursor up",
           "motion": {
             "scope": "relative, line",
@@ -54,7 +54,7 @@
           }
         },
         {
-          "command": "<kbd>l</kbd>",
+          "command": "l",
           "description": "move cursor right",
           "motion": {
             "scope": "relative, character",
@@ -62,7 +62,7 @@
           }
         },
         {
-          "command": "<kbd>H</kbd>",
+          "command": "H",
           "description": "move to top of screen",
           "motion": {
             "scope": "view",
@@ -70,7 +70,7 @@
           }
         },
         {
-          "command": "<kbd>M</kbd>",
+          "command": "M",
           "description": "move to middle of screen",
           "motion": {
             "scope": "view",
@@ -78,7 +78,7 @@
           }
         },
         {
-          "command": "<kbd>L</kbd>",
+          "command": "L",
           "description": "move to bottom of screen",
           "motion": {
             "scope": "view",
@@ -86,7 +86,7 @@
           }
         },
         {
-          "command": "<kbd>w</kbd>",
+          "command": "w",
           "description": "jump forwards to the start of a word",
           "motion": {
             "scope": "word",
@@ -94,7 +94,7 @@
           }
         },
         {
-          "command": "<kbd>W</kbd>",
+          "command": "W",
           "description": "jump forwards to the start of a word (words can contain punctuation)",
           "motion": {
             "scope": "word, with punctuation",
@@ -102,7 +102,7 @@
           }
         },
         {
-          "command": "<kbd>e</kbd>",
+          "command": "e",
           "description": "jump forwards to the end of a word",
           "motion": {
             "scope": "word",
@@ -110,7 +110,7 @@
           }
         },
         {
-          "command": "<kbd>E</kbd>",
+          "command": "E",
           "description": "jump forwards to the end of a word (words can contain punctuation)",
           "motion": {
             "scope": "word, with punctuation",
@@ -118,7 +118,7 @@
           }
         },
         {
-          "command": "<kbd>b</kbd>",
+          "command": "b",
           "description": "jump backwards to the start of a word",
           "motion": {
             "scope": "word",
@@ -126,7 +126,7 @@
           }
         },
         {
-          "command": "<kbd>B</kbd>",
+          "command": "B",
           "description": "jump backwards to the start of a word (words can contain punctuation)",
           "motion": {
             "scope": "word, with punctuation",
@@ -134,7 +134,7 @@
           }
         },
         {
-          "command": "<kbd>%</kbd>",
+          "command": "%",
           "description": "move to matching character (default supported pairs: '()', '{}', '[]' – use <code>:h matchpairs</code> in vim for more info)",
           "motion": {
             "scope": "character pair",
@@ -142,7 +142,7 @@
           }
         },
         {
-          "command": "<kbd>0</kbd>",
+          "command": "0",
           "description": "jump to the start of the line",
           "motion": {
             "scope": "line",
@@ -150,7 +150,7 @@
           }
         },
         {
-          "command": "<kbd>^</kbd>",
+          "command": "^",
           "description": "jump to the first non-blank character of the line",
           "motion": {
             "scope": "line",
@@ -158,7 +158,7 @@
           }
         },
         {
-          "command": "<kbd>$</kbd>",
+          "command": "$",
           "description": "jump to the end of the line",
           "motion": {
             "scope": "line",
@@ -166,7 +166,7 @@
           }
         },
         {
-          "command": "<kbd>g_</kbd>",
+          "command": "g_",
           "description": "jump to the last non-blank character of the line",
           "motion": {
             "scope": "line",
@@ -174,7 +174,7 @@
           }
         },
         {
-          "command": "<kbd>gg</kbd>",
+          "command": "gg",
           "description": "go to the first line of the document",
           "motion": {
             "scope": "document",
@@ -182,7 +182,7 @@
           }
         },
         {
-          "command": "<kbd>G</kbd>",
+          "command": "G",
           "description": "go to the last line of the document",
           "motion": {
             "scope": "document",
@@ -190,7 +190,7 @@
           }
         },
         {
-          "command": "<kbd>5G</kbd>",
+          "command": "5G",
           "description": "go to line 5",
           "motion": {
             "scope": "absolute",
@@ -198,7 +198,7 @@
           }
         },
         {
-          "command": "<kbd>fx</kbd>",
+          "command": "fx",
           "description": "jump to next occurrence of character x",
           "motion": {
             "scope": "find, line",
@@ -206,7 +206,7 @@
           }
         },
         {
-          "command": "<kbd>tx</kbd>",
+          "command": "tx",
           "description": "jump to before next occurrence of character x",
           "motion": {
             "scope": "find, line",
@@ -214,7 +214,7 @@
           }
         },
         {
-          "command": "<kbd>Fx</kbd>",
+          "command": "Fx",
           "description": "jump to previous occurence of character x",
           "motion": {
             "scope": "find, line",
@@ -222,7 +222,7 @@
           }
         },
         {
-          "command": "<kbd>Tx</kbd>",
+          "command": "Tx",
           "description": "jump to after previous occurence of character x",
           "motion": {
             "scope": "find, line",
@@ -230,7 +230,7 @@
           }
         },
         {
-          "command": "<kbd>;</kbd>",
+          "command": ";",
           "description": "repeat previous f, t, F or T movement",
           "motion": {
             "scope": "find, line",
@@ -238,7 +238,7 @@
           }
         },
         {
-          "command": "<kbd>,</kbd>",
+          "command": ",",
           "description": "repeat previous f, t, F or T movement, backwards",
           "motion": {
             "scope": "find, line",
@@ -246,7 +246,7 @@
           }
         },
         {
-          "command": "<kbd>}</kbd>",
+          "command": "}",
           "description": "jump to next paragraph (or function/block, when editing code)",
           "motion": {
             "scope": "paragraph",
@@ -254,7 +254,7 @@
           }
         },
         {
-          "command": "<kbd>{</kbd>",
+          "command": "{",
           "description": "jump to previous paragraph (or function/block, when editing code)",
           "motion": {
             "scope": "paragraph",
@@ -262,7 +262,7 @@
           }
         },
         {
-          "command": "<kbd>zz</kbd>",
+          "command": "zz",
           "description": "center cursor on screen",
           "motion": {
             "scope": "view",
@@ -270,7 +270,7 @@
           }
         },
         {
-          "command": "<kbd>Ctrl</kbd> + <kbd>b</kbd>",
+          "command": "Ctrl + b",
           "description": "move back one full screen",
           "motion": {
             "scope": "view",
@@ -278,7 +278,7 @@
           }
         },
         {
-          "command": "<kbd>Ctrl</kbd> + <kbd>f</kbd>",
+          "command": "Ctrl + f",
           "description": "move forward one full screen",
           "motion": {
             "scope": "view",
@@ -286,7 +286,7 @@
           }
         },
         {
-          "command": "<kbd>Ctrl</kbd> + <kbd>d</kbd>",
+          "command": "Ctrl + d",
           "description": "move forward 1/2 a screen",
           "motion": {
             "scope": "view",
@@ -294,7 +294,7 @@
           }
         },
         {
-          "command": "<kbd>Ctrl</kbd> + <kbd>u</kbd>",
+          "command": "Ctrl + u",
           "description": "move back 1/2 a screen",
           "motion": {
             "scope": "view",
@@ -307,35 +307,35 @@
       "heading": "insert mode",
       "items": [
         {
-          "command": "<kbd>i</kbd>",
+          "command": "i",
           "description": "insert before the cursor"
         },
         {
-          "command": "<kbd>I</kbd>",
+          "command": "I",
           "description": "insert at the beginning of the line"
         },
         {
-          "command": "<kbd>a</kbd>",
+          "command": "a",
           "description": "insert (append) after the cursor"
         },
         {
-          "command": "<kbd>A</kbd>",
+          "command": "A",
           "description": "insert (append) at the end of the line"
         },
         {
-          "command": "<kbd>o</kbd>",
+          "command": "o",
           "description": "append (open) a new line below the current line"
         },
         {
-          "command": "<kbd>O</kbd>",
+          "command": "O",
           "description": "append (open) a new line above the current line"
         },
         {
-          "command": "<kbd>ea</kbd>",
+          "command": "ea",
           "description": "insert (append) at the end of the word"
         },
         {
-          "command": "<kbd>Esc</kbd>",
+          "command": "Esc",
           "description": "exit insert mode"
         }
       ]
@@ -344,51 +344,51 @@
       "heading": "editing",
       "items": [
         {
-          "command": "<kbd>r</kbd>",
+          "command": "r",
           "description": "replace a single character"
         },
         {
-          "command": "<kbd>J</kbd>",
+          "command": "J",
           "description": "join line below to the current one with one space in between"
         },
         {
-          "command": "<kbd>gJ</kbd>",
+          "command": "gJ",
           "description": "join line below to the current one without space in between"
         },
         {
-          "command": "<kbd>cc</kbd>",
+          "command": "cc",
           "description": "change (replace) entire line"
         },
         {
-          "command": "<kbd>cw</kbd>",
+          "command": "cw",
           "description": "change (replace) to the end of the word"
         },
         {
-          "command": "<kbd>c$</kbd>",
+          "command": "c$",
           "description": "change (replace) to the end of the line"
         },
         {
-          "command": "<kbd>s</kbd>",
+          "command": "s",
           "description": "delete character and substitute text"
         },
         {
-          "command": "<kbd>S</kbd>",
+          "command": "S",
           "description": "delete line and substitute text (same as cc)"
         },
         {
-          "command": "<kbd>xp</kbd>",
+          "command": "xp",
           "description": "transpose two letters (delete and paste)"
         },
         {
-          "command": "<kbd>u</kbd>",
+          "command": "u",
           "description": "undo"
         },
         {
-          "command": "<kbd>Ctrl</kbd> + <kbd>r</kbd>",
+          "command": "Ctrl + r",
           "description": "redo"
         },
         {
-          "command": "<kbd>.</kbd>",
+          "command": ".",
           "description": "repeat last command"
         }
       ]
@@ -397,47 +397,47 @@
       "heading": "visual mode",
       "items": [
         {
-          "command": "<kbd>v</kbd>",
+          "command": "v",
           "description": "start visual mode, mark lines, then do a command (like y-yank)"
         },
         {
-          "command": "<kbd>V</kbd>",
+          "command": "V",
           "description": "start linewise visual mode"
         },
         {
-          "command": "<kbd>o</kbd>",
+          "command": "o",
           "description": "move to other end of marked area"
         },
         {
-          "command": "<kbd>Ctrl</kbd> + <kbd>v</kbd>",
+          "command": "Ctrl + v",
           "description": "start visual block mode"
         },
         {
-          "command": "<kbd>O</kbd>",
+          "command": "O",
           "description": "move to other corner of block"
         },
         {
-          "command": "<kbd>aw</kbd>",
+          "command": "aw",
           "description": "mark a word"
         },
         {
-          "command": "<kbd>ab</kbd>",
+          "command": "ab",
           "description": "a block with ()"
         },
         {
-          "command": "<kbd>aB</kbd>",
+          "command": "aB",
           "description": "a block with {}"
         },
         {
-          "command": "<kbd>ib</kbd>",
+          "command": "ib",
           "description": "inner block with ()"
         },
         {
-          "command": "<kbd>iB</kbd>",
+          "command": "iB",
           "description": "inner block with {}"
         },
         {
-          "command": "<kbd>Esc</kbd>",
+          "command": "Esc",
           "description": "exit visual mode"
         }
       ]
@@ -446,23 +446,23 @@
       "heading": "visual commands",
       "items": [
         {
-          "command": "<kbd>&gt;</kbd>",
+          "command": "&gt;",
           "description": "shift text right"
         },
         {
-          "command": "<kbd>&lt;</kbd>",
+          "command": "&lt;",
           "description": "shift text left"
         },
         {
-          "command": "<kbd>y</kbd>",
+          "command": "y",
           "description": "yank (copy) marked text"
         },
         {
-          "command": "<kbd>d</kbd>",
+          "command": "d",
           "description": "delete marked text"
         },
         {
-          "command": "<kbd>~</kbd>",
+          "command": "~",
           "description": "switch case"
         }
       ]
@@ -471,15 +471,15 @@
       "heading": "registers",
       "items": [
         {
-          "command": "<kbd>:reg</kbd>",
+          "command": ":reg",
           "description": "show registers content"
         },
         {
-          "command": "<kbd>\"xy</kbd>",
+          "command": "\"xy",
           "description": "yank into register x"
         },
         {
-          "command": "<kbd>\"xp</kbd>",
+          "command": "\"xp",
           "description": "paste contents of register x"
         }
       ]
@@ -488,19 +488,19 @@
       "heading": "marks",
       "items": [
         {
-          "command": "<kbd>:marks</kbd>",
+          "command": ":marks",
           "description": "list of marks"
         },
         {
-          "command": "<kbd>ma</kbd>",
+          "command": "ma",
           "description": "set current position for mark A"
         },
         {
-          "command": "<kbd>`a</kbd>",
+          "command": "`a",
           "description": "jump to position of mark A"
         },
         {
-          "command": "<kbd>y`a</kbd>",
+          "command": "y`a",
           "description": "yank text to position of mark A"
         }
       ]
@@ -509,19 +509,19 @@
       "heading": "macros",
       "items": [
         {
-          "command": "<kbd>qa</kbd>",
+          "command": "qa",
           "description": "record macro a"
         },
         {
-          "command": "<kbd>q</kbd>",
+          "command": "q",
           "description": "stop recording macro"
         },
         {
-          "command": "<kbd>@a</kbd>",
+          "command": "@a",
           "description": "run macro a"
         },
         {
-          "command": "<kbd>@@</kbd>",
+          "command": "@@",
           "description": "rerun last run macro"
         }
       ]
@@ -530,51 +530,51 @@
       "heading": "cut & paste",
       "items": [
         {
-          "command": "<kbd>yy</kbd>",
+          "command": "yy",
           "description": "yank (copy) a line"
         },
         {
-          "command": "<kbd>2yy</kbd>",
+          "command": "2yy",
           "description": "yank (copy) 2 lines"
         },
         {
-          "command": "<kbd>yw</kbd>",
+          "command": "yw",
           "description": "yank (copy) the characters of the word from the cursor position to the start of the next word"
         },
         {
-          "command": "<kbd>y$</kbd>",
+          "command": "y$",
           "description": "yank (copy) to end of line"
         },
         {
-          "command": "<kbd>p</kbd>",
+          "command": "p",
           "description": "put (paste) the clipboard after cursor"
         },
         {
-          "command": "<kbd>P</kbd>",
+          "command": "P",
           "description": "put (paste) before cursor"
         },
         {
-          "command": "<kbd>dd</kbd>",
+          "command": "dd",
           "description": "delete (cut) a line"
         },
         {
-          "command": "<kbd>2dd</kbd>",
+          "command": "2dd",
           "description": "delete (cut) 2 lines"
         },
         {
-          "command": "<kbd>dw</kbd>",
+          "command": "dw",
           "description": "delete (cut) the characters of the word from the cursor position to the start of the next word"
         },
         {
-          "command": "<kbd>D</kbd>",
+          "command": "D",
           "description": "delete (cut) to the end of the line"
         },
         {
-          "command": "<kbd>d$</kbd>",
+          "command": "d$",
           "description": "delete (cut) to the end of the line"
         },
         {
-          "command": "<kbd>x</kbd>",
+          "command": "x",
           "description": "delete (cut) character"
         }
       ]
@@ -583,27 +583,27 @@
       "heading": "saving & exiting",
       "items": [
         {
-          "command": "<kbd>:w</kbd>",
+          "command": ":w",
           "description": "write (save) the file, but don't exit"
         },
         {
-          "command": "<kbd>:w !sudo tee %</kbd>",
+          "command": ":w !sudo tee %",
           "description": "write out the current file using sudo"
         },
         {
-          "command": "<kbd>:wq</kbd> or <kbd>:x</kbd> or <kbd>ZZ</kbd>",
+          "command": ":wq or :x or ZZ",
           "description": "write (save) and quit"
         },
         {
-          "command": "<kbd>:q</kbd>",
+          "command": ":q",
           "description": "quit (fails if there are unsaved changes)"
         },
         {
-          "command": "<kbd>:q!</kbd> or <kbd>ZQ</kbd>",
+          "command": ":q! or ZQ",
           "description": "quit and throw away unsaved changes"
         },
         {
-          "command": "<kbd>:wqa</kbd>",
+          "command": ":wqa",
           "description": "write (save) and quit on all tabs"
         }
       ]
@@ -612,35 +612,35 @@
       "heading": "search & replace",
       "items": [
         {
-          "command": "<kbd>/pattern</kbd>",
+          "command": "/pattern",
           "description": "search for pattern"
         },
         {
-          "command": "<kbd>?pattern</kbd>",
+          "command": "?pattern",
           "description": "search backward for pattern"
         },
         {
-          "command": "<kbd>\\vpattern</kbd>",
+          "command": "\\vpattern",
           "description": "very magic' pattern: non-alphanumeric characters are interpreted as special regex symbols (no escaping needed)"
         },
         {
-          "command": "<kbd>n</kbd>",
+          "command": "n",
           "description": "repeat search in same direction"
         },
         {
-          "command": "<kbd>N</kbd>",
+          "command": "N",
           "description": "repeat search in opposite direction"
         },
         {
-          "command": "<kbd>:%s/old/new/g</kbd>",
+          "command": ":%s/old/new/g",
           "description": "replace all old with new throughout file"
         },
         {
-          "command": "<kbd>:%s/old/new/gc</kbd>",
+          "command": ":%s/old/new/gc",
           "description": "replace all old with new throughout file with confirmations"
         },
         {
-          "command": "<kbd>:noh</kbd>",
+          "command": ":noh",
           "description": "remove highlighting of search matches"
         }
       ]
@@ -649,19 +649,19 @@
       "heading": "search & replace: multiple files",
       "items": [
         {
-          "command": "<kbd>:vimgrep /pattern/ {file}</kbd>",
+          "command": ":vimgrep /pattern/ {file}",
           "description": "search for pattern in multiple files"
         },
         {
-          "command": "<kbd>:cn</kbd>",
+          "command": ":cn",
           "description": "jump to the next match"
         },
         {
-          "command": "<kbd>:cp</kbd>",
+          "command": ":cp",
           "description": "jump to the previous match"
         },
         {
-          "command": "<kbd>:copen</kbd>",
+          "command": ":copen",
           "description": "open a window containing the list of matches"
         }
       ]
@@ -670,63 +670,63 @@
       "heading": "multiple files",
       "items": [
         {
-          "command": "<kbd>:e file</kbd>",
+          "command": ":e file",
           "description": "edit a file in a new buffer"
         },
         {
-          "command": "<kbd>:bnext</kbd> or <kbd>:bn</kbd>",
+          "command": ":bnext or :bn",
           "description": "go to the next buffer"
         },
         {
-          "command": "<kbd>:bprev</kbd> or <kbd>:bp</kbd>",
+          "command": ":bprev or :bp",
           "description": "go to the previous buffer"
         },
         {
-          "command": "<kbd>:bd</kbd>",
+          "command": ":bd",
           "description": "delete a buffer (close a file)"
         },
         {
-          "command": "<kbd>:ls</kbd>",
+          "command": ":ls",
           "description": "list all open buffers"
         },
         {
-          "command": "<kbd>:sp file</kbd>",
+          "command": ":sp file",
           "description": "open a file in a new buffer and split window"
         },
         {
-          "command": "<kbd>:vsp file</kbd>",
+          "command": ":vsp file",
           "description": "open a file in a new buffer and vertically split window"
         },
         {
-          "command": "<kbd>Ctrl</kbd> + <kbd>ws</kbd>",
+          "command": "Ctrl + ws",
           "description": "split window"
         },
         {
-          "command": "<kbd>Ctrl</kbd> + <kbd>ww</kbd>",
+          "command": "Ctrl + ww",
           "description": "switch windows"
         },
         {
-          "command": "<kbd>Ctrl</kbd> + <kbd>wq</kbd>",
+          "command": "Ctrl + wq",
           "description": "quit a window"
         },
         {
-          "command": "<kbd>Ctrl</kbd> + <kbd>wv</kbd>",
+          "command": "Ctrl + wv",
           "description": "split window vertically"
         },
         {
-          "command": "<kbd>Ctrl</kbd> + <kbd>wh</kbd>",
+          "command": "Ctrl + wh",
           "description": "move cursor to the left window (vertical split)"
         },
         {
-          "command": "<kbd>Ctrl</kbd> + <kbd>wl</kbd>",
+          "command": "Ctrl + wl",
           "description": "move cursor to the right window (vertical split)"
         },
         {
-          "command": "<kbd>Ctrl</kbd> + <kbd>wj</kbd>",
+          "command": "Ctrl + wj",
           "description": "move cursor to the window below (horizontal split)"
         },
         {
-          "command": "<kbd>Ctrl</kbd> + <kbd>wk</kbd>",
+          "command": "Ctrl + wk",
           "description": "move cursor to the window above (horizontal split)"
         }
       ]
@@ -735,39 +735,39 @@
       "heading": "tabs",
       "items": [
         {
-          "command": "<kbd>:tabnew</kbd> or <kbd>:tabnew file</kbd>",
+          "command": ":tabnew or :tabnew file",
           "description": "open a file in a new tab"
         },
         {
-          "command": "<kbd>Ctrl</kbd> + <kbd>wT</kbd>",
+          "command": "Ctrl + wT",
           "description": "move the current split window into its own tab"
         },
         {
-          "command": "<kbd>gt</kbd> or <kbd>:tabnext</kbd> or <kbd>:tabn</kbd>",
+          "command": "gt or :tabnext or :tabn",
           "description": "move to the next tab"
         },
         {
-          "command": "<kbd>gT</kbd> or <kbd>:tabprev</kbd> or <kbd>:tabp</kbd>",
+          "command": "gT or :tabprev or :tabp",
           "description": "move to the previous tab"
         },
         {
-          "command": "<kbd>#gt</kbd>",
+          "command": "#gt",
           "description": "move to tab number #"
         },
         {
-          "command": "<kbd>:tabmove #</kbd>",
+          "command": ":tabmove #",
           "description": "move current tab to the #th position (indexed from 0)"
         },
         {
-          "command": "<kbd>:tabclose</kbd> or <kbd>:tabc</kbd>",
+          "command": ":tabclose or :tabc",
           "description": "close the current tab and all its windows"
         },
         {
-          "command": "<kbd>:tabonly</kbd> or <kbd>:tabo</kbd>",
+          "command": ":tabonly or :tabo",
           "description": "close all tabs except for the current one"
         },
         {
-          "command": "<kbd>:tabdo</kbd> command",
+          "command": ":tabdo command",
           "description": "run the <code>command</code> on all tabs (e.g. <code>:tabdo q</code> – closes all opened tabs)"
         }
       ]
