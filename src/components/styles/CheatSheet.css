@@ -2,12 +2,12 @@
   background: #222;
 }
 
-.c-cheat-sheet--title {
+.c-cheat-sheet__title {
   color: #eee;
   display: none;
 }
 
-.c-cheat-sheet--contents {
+.c-cheat-sheet__contents {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;

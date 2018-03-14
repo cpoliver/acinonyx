@@ -10,14 +10,14 @@ const renderItem = (item, key) => <Item {...item} key={key} />;
 
 const renderSubsection = ({ subheading, items }, key) => (
   <div className="c-subsection" key={key}>
-    <h3 className="c-subsection--heading">{ subheading }</h3>
+    <h3 className="c-subsection__heading">{ subheading }</h3>
     { mapWithIndex(renderItem, items) }
   </div>
 );
 
 const Section = ({ heading, subsections, items }) => (
   <div className="c-section">
-    <h2 className="c-section--heading">{ heading }</h2>
+    <h2 className="c-section__heading">{ heading }</h2>
     { subsections ? mapWithIndex(renderSubsection, subsections) : mapWithIndex(renderItem, items) }
   </div>
 );

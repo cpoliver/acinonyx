@@ -2,7 +2,7 @@
   color: lightgrey;
 }
 
-.c-app--header {
+.c-app__header {
   align-items: baseline;
   background-color: #111;
   color: white;
@@ -11,13 +11,13 @@
   padding: .25rem 1rem;
 }
 
-.c-app--title {
+.c-app__title {
   padding: .2rem 1rem;
   letter-spacing: .2rem;
   text-transform: uppercase;
 }
 
-.c-app--intro {
+.c-app__intro {
   font-size: 1.3rem;
   color: lightgrey;
 }

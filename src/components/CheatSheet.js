@@ -10,8 +10,8 @@ const renderSection = (section, key) => <Section { ...section } key={key} />;
 
 const CheatSheet = ({ title, sections }) => (
   <div className="c-cheat-sheet">
-    <h1 className="c-cheat-sheet--title">{ title }</h1>
-    <div className="c-cheat-sheet--contents">
+    <h1 className="c-cheat-sheet__title">{ title }</h1>
+    <div className="c-cheat-sheet__contents">
       { mapWithIndex(renderSection, sections) }
     </div>
   </div>

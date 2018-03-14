@@ -4,41 +4,41 @@
   display: flex;
 }
 
-.c-item--keys {
-  min-width: 10rem;
+.c-item__keys {
+  min-width: 12rem;
 }
 
-.c-item--modifiers {
+.c-item__modifiers {
   align-items: baseline;
   display: inline-flex;
   margin-right: .5rem;
 }
 
-.c-item--modifiers > pre {
+.c-item__modifiers > pre {
   background: #eee;
   color: #000;
   margin: .25rem 0 .5rem 1rem;
   padding: .5rem;
 }
 
-.c-item--command {
+.c-item__command {
   align-items: baseline;
   display: inline-flex;
   margin-right: .5rem;
 }
 
-.c-item--command > pre {
+.c-item__command > pre {
   background: #000;
   color: #eee;
   margin: .25rem .5rem;
   padding: .5rem;
 }
 
-.c-item--description {
+.c-item__description {
   display: inline-flex;
 }
 
-.c-item--description > pre {
+.c-item__description > pre {
   background: #000;
   color: #eee;
   margin: -.1rem .5rem;

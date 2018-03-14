@@ -5,13 +5,13 @@
   width: 25%;
 }
 
-.c-section--heading {
+.c-section__heading {
   color: white;
   font-size: 1.4rem;
   text-align: left;
   text-transform: uppercase;
 }
 
-.c-subsection--heading {
+.c-subsection__heading {
   text-transform: uppercase;
 }
