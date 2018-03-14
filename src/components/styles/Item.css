@@ -4,6 +4,23 @@
   display: flex;
 }
 
+.c-item--keys {
+  min-width: 10rem;
+}
+
+.c-item--modifiers {
+  align-items: baseline;
+  display: inline-flex;
+  margin-right: .5rem;
+}
+
+.c-item--modifiers > pre {
+  background: #eee;
+  color: #000;
+  margin: .25rem 0 .5rem 1rem;
+  padding: .5rem;
+}
+
 .c-item--command {
   align-items: baseline;
   display: inline-flex;

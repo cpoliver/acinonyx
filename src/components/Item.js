@@ -8,11 +8,14 @@ import './styles/Item.css';
 
 const formatCode = replace(/code/g, 'pre');
 
-const renderCommand = (command, key) => <pre key={key}>{ command }</pre>
+const renderPre = (item, key) => <pre key={key}>{ item }</pre>;
 
-const Item = ({ commands, description }) => (
+const Item = ({ modifiers = [], commands, description }) => (
   <div className="c-item">
-    <div className="c-item--command">{ mapWithIndex(renderCommand, commands) }</div>
+    <div className="c-item--keys">
+      <div className="c-item--modifiers">{ mapWithIndex(renderPre, modifiers) }</div>
+      <div className="c-item--command">{ mapWithIndex(renderPre, commands) }</div>
+    </div>
     <div className="c-item--description" dangerouslySetInnerHTML={{ __html: formatCode(description) }}></div>
   </div>
 );
