@@ -8,17 +8,17 @@ import './styles/Section.css';
 
 const renderItem = (item, key) => <Item {...item} key={key} />;
 
-const renderSubheading = ({ subheading, items }, key) => (
-  <div key={key}>
-    <h3>{ subheading }</h3>
+const renderSubsection = ({ subheading, items }, key) => (
+  <div className="c-subsection" key={key}>
+    <h3 className="c-subsection--heading">{ subheading }</h3>
     { mapWithIndex(renderItem, items) }
   </div>
 );
 
-const Section = ({ heading, subheadings, items }) => (
+const Section = ({ heading, subsections, items }) => (
   <div className="c-section">
     <h2 className="c-section--heading">{ heading }</h2>
-    { subheadings ? mapWithIndex(renderSubheading, subheadings) : mapWithIndex(renderItem, items) }
+    { subsections ? mapWithIndex(renderSubsection, subsections) : mapWithIndex(renderItem, items) }
   </div>
 );
 
