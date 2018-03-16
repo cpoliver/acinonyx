@@ -15,8 +15,9 @@ const renderSubsection = ({ subheading, items }, key) => (
   </div>
 );
 
-const Section = ({ heading, subsections, items }) => (
-  <div className="c-section">
+const Section = ({ heading, subsections, items, span = 1 }) => (
+  <div className="c-section"
+  style={{ gridRow: `span ${span}` }}>
     <h2 className="c-section__heading">{ heading }</h2>
     { subsections ? mapWithIndex(renderSubsection, subsections) : mapWithIndex(renderItem, items) }
   </div>

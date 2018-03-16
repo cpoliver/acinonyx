@@ -6,6 +6,7 @@
 
 .c-item__keys {
   min-width: 12rem;
+  justify-self: flex-end;
 }
 
 .c-item__modifiers {

@@ -4,15 +4,20 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Open Sans', sans-serif;
-  font-size: 1.2rem;
+  font-size: .8rem;
 }
 
 h1, h2, h3 {
   font-family: 'Oswald', sans-serif;
+  letter-spacing: .1rem;
 }
 
 h1 {
   font-size: 1.3rem;
+}
+
+h2 {
+  font-weight: 500;
 }
 
 h3 {

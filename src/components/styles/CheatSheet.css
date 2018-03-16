@@ -8,8 +8,8 @@
 }
 
 .c-cheat-sheet__contents {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  height: 100vh;
+  display: grid;
+  /* grid-auto-flow: row; */
+  grid-gap: 1rem;
+  grid-template-columns: repeat(3, 1fr);
 }

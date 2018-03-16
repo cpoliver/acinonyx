@@ -2,42 +2,8 @@
   "title": "vim",
   "sections": [
     {
-      "heading": "global",
-      "items": [
-        {
-          "commands": [
-            ":help keyword"
-          ],
-          "description": "open help for keyword"
-        },
-        {
-          "commands": [
-            ":o file"
-          ],
-          "description": "open file"
-        },
-        {
-          "commands": [
-            ":saveas file"
-          ],
-          "description": "save file as"
-        },
-        {
-          "commands": [
-            ":close"
-          ],
-          "description": "close current pane"
-        },
-        {
-          "commands": [
-            "K"
-          ],
-          "description": "open man page for word under the cursor"
-        }
-      ]
-    },
-    {
       "heading": "motions",
+      "span": 2,
       "subsections": [
         {
           "subheading": "cursor",
@@ -204,6 +170,41 @@
               "hint": "use `:h matchpairs` for more info"
             }
           ]
+        }
+      ]
+    },
+    {
+      "heading": "global",
+      "items": [
+        {
+          "commands": [
+            ":help keyword"
+          ],
+          "description": "open help for keyword"
+        },
+        {
+          "commands": [
+            ":o file"
+          ],
+          "description": "open file"
+        },
+        {
+          "commands": [
+            ":saveas file"
+          ],
+          "description": "save file as"
+        },
+        {
+          "commands": [
+            ":close"
+          ],
+          "description": "close current pane"
+        },
+        {
+          "commands": [
+            "K"
+          ],
+          "description": "open man page for word under the cursor"
         }
       ]
     },
