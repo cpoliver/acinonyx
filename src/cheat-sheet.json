@@ -227,31 +227,31 @@
           "commands": [
             "a"
           ],
-          "description": "insert (append) after the cursor"
+          "description": "append after the cursor"
         },
         {
           "commands": [
             "A"
           ],
-          "description": "insert (append) at the end of the line"
+          "description": "append at the end of the line"
         },
         {
           "commands": [
             "o"
           ],
-          "description": "append (open) a new line below the current line"
+          "description": "open a new line below the current line"
         },
         {
           "commands": [
             "O"
           ],
-          "description": "append (open) a new line above the current line"
+          "description": "open a new line above the current line"
         },
         {
           "commands": [
             "ea"
           ],
-          "description": "insert (append) at the end of the word"
+          "description": "append at the end of the word"
         },
         {
           "commands": [
@@ -274,31 +274,31 @@
           "commands": [
             "J"
           ],
-          "description": "join line below to the current one with one space in between"
+          "description": "join line below with one space in between"
         },
         {
           "commands": [
             "gJ"
           ],
-          "description": "join line below to the current one without space in between"
+          "description": "join line below without space in between"
         },
         {
           "commands": [
             "cc"
           ],
-          "description": "change (replace) entire line"
+          "description": "change entire line"
         },
         {
           "commands": [
             "cw"
           ],
-          "description": "change (replace) to the end of the word"
+          "description": "change from cursor position to the end of the word"
         },
         {
           "commands": [
             "c$"
           ],
-          "description": "change (replace) to the end of the line"
+          "description": "change from cursor position to the end of the line"
         },
         {
           "commands": [
@@ -348,13 +348,13 @@
           "commands": [
             "v"
           ],
-          "description": "start visual mode, mark lines, then do a command (like y-yank)"
+          "description": "enter visual mode"
         },
         {
           "commands": [
             "V"
           ],
-          "description": "start linewise visual mode"
+          "description": "enter visual line mode"
         },
         {
           "commands": [
@@ -369,7 +369,7 @@
           "commands": [
             "v"
           ],
-          "description": "start visual block mode"
+          "description": "enter visual block mode"
         },
         {
           "commands": [
@@ -422,19 +422,19 @@
           "commands": [
             ">"
           ],
-          "description": "shift text right"
+          "description": "indent"
         },
         {
           "commands": [
             "<"
           ],
-          "description": "shift text left"
+          "description": "unindent"
         },
         {
           "commands": [
             "y"
           ],
-          "description": "yank (copy) marked text"
+          "description": "yank marked text"
         },
         {
           "commands": [
@@ -463,13 +463,13 @@
           "commands": [
             "\"xy"
           ],
-          "description": "yank into register x"
+          "description": "yank into register `x`"
         },
         {
           "commands": [
             "\"xp"
           ],
-          "description": "paste contents of register x"
+          "description": "paste contents of register `x`"
         }
       ]
     },
@@ -486,19 +486,19 @@
           "commands": [
             "ma"
           ],
-          "description": "set current position for mark A"
+          "description": "set current position for mark `A`"
         },
         {
           "commands": [
             "`a"
           ],
-          "description": "jump to position of mark A"
+          "description": "jump to position of mark `A`"
         },
         {
           "commands": [
             "y`a"
           ],
-          "description": "yank text to position of mark A"
+          "description": "yank text to position of mark `A`"
         }
       ]
     },
@@ -509,7 +509,7 @@
           "commands": [
             "qa"
           ],
-          "description": "record macro a"
+          "description": "record macro `a`"
         },
         {
           "commands": [
@@ -521,7 +521,7 @@
           "commands": [
             "@a"
           ],
-          "description": "run macro a"
+          "description": "run macro `a`"
         },
         {
           "commands": [
@@ -538,73 +538,73 @@
           "commands": [
             "yy"
           ],
-          "description": "yank (copy) a line"
+          "description": "yank a line"
         },
         {
           "commands": [
             "2yy"
           ],
-          "description": "yank (copy) 2 lines"
+          "description": "yank `2` lines"
         },
         {
           "commands": [
             "yw"
           ],
-          "description": "yank (copy) the characters of the word from the cursor position to the start of the next word"
+          "description": "yank characters from the cursor position to the start of the next word"
         },
         {
           "commands": [
             "y$"
           ],
-          "description": "yank (copy) to end of line"
+          "description": "yank to end of the line"
         },
         {
           "commands": [
             "p"
           ],
-          "description": "put (paste) the clipboard after cursor"
+          "description": "paste the clipboard after cursor"
         },
         {
           "commands": [
             "P"
           ],
-          "description": "put (paste) before cursor"
+          "description": "paste before cursor"
         },
         {
           "commands": [
             "dd"
           ],
-          "description": "delete (cut) a line"
+          "description": "delete line"
         },
         {
           "commands": [
             "2dd"
           ],
-          "description": "delete (cut) 2 lines"
+          "description": "delete `2` lines"
         },
         {
           "commands": [
             "dw"
           ],
-          "description": "delete (cut) the characters of the word from the cursor position to the start of the next word"
+          "description": "delete from the cursor position to the start of the next word"
         },
         {
           "commands": [
             "D"
           ],
-          "description": "delete (cut) to the end of the line"
+          "description": "delete to the end of the line"
         },
         {
           "commands": [
             "d$"
           ],
-          "description": "delete (cut) to the end of the line"
+          "description": "delete to the end of the line"
         },
         {
           "commands": [
             "x"
           ],
-          "description": "delete (cut) character"
+          "description": "delete character"
         }
       ]
     },
@@ -615,19 +615,21 @@
           "commands": [
             ":w"
           ],
-          "description": "write (save) the file, but don't exit"
+          "description": "write file"
         },
         {
           "commands": [
             ":w !sudo tee %"
           ],
-          "description": "write out the current file using sudo"
+          "description": "write the current file using sudo"
         },
         {
           "commands": [
-            ":wq or :x or ZZ"
+            ":wq",
+            ":x",
+            "ZZ"
           ],
-          "description": "write (save) and quit"
+          "description": "save and quit"
         },
         {
           "commands": [
@@ -637,15 +639,16 @@
         },
         {
           "commands": [
-            ":q! or ZQ"
+            ":q!",
+            "ZQ"
           ],
-          "description": "quit and throw away unsaved changes"
+          "description": "quit and discard unsaved changes"
         },
         {
           "commands": [
             ":wqa"
           ],
-          "description": "write (save) and quit on all tabs"
+          "description": "write and quit all tabs"
         }
       ]
     },
@@ -656,19 +659,19 @@
           "commands": [
             "/pattern"
           ],
-          "description": "search for pattern"
+          "description": "search for `pattern`"
         },
         {
           "commands": [
             "?pattern"
           ],
-          "description": "search backward for pattern"
+          "description": "search backward for `pattern`"
         },
         {
           "commands": [
             "\\vpattern"
           ],
-          "description": "very magic' pattern: non-alphanumeric characters are interpreted as special regex symbols (no escaping needed)"
+          "description": "very magic mode: non-alphanumeric characters are interpreted as regex symbols (no escaping needed)"
         },
         {
           "commands": [
@@ -686,13 +689,13 @@
           "commands": [
             ":%s/old/new/g"
           ],
-          "description": "replace all old with new throughout file"
+          "description": "replace all in file"
         },
         {
           "commands": [
             ":%s/old/new/gc"
           ],
-          "description": "replace all old with new throughout file with confirmations"
+          "description": "replace with confirmations"
         },
         {
           "commands": [
@@ -709,7 +712,7 @@
           "commands": [
             ":vimgrep /pattern/ {file}"
           ],
-          "description": "search for pattern in multiple files"
+          "description": "search for `pattern` in multiple files"
         },
         {
           "commands": [
@@ -738,11 +741,12 @@
           "commands": [
             ":e file"
           ],
-          "description": "edit a file in a new buffer"
+          "description": "edit `file` in a new buffer"
         },
         {
           "commands": [
-            ":bnext or :bn"
+            ":bnext",
+            ":bn"
           ],
           "description": "go to the next buffer"
         },
@@ -756,25 +760,25 @@
           "commands": [
             ":bd"
           ],
-          "description": "delete a buffer (close a file)"
+          "description": "delete buffer (close file)"
         },
         {
           "commands": [
             ":ls"
           ],
-          "description": "list all open buffers"
+          "description": "list open buffers"
         },
         {
           "commands": [
             ":sp file"
           ],
-          "description": "open a file in a new buffer and split window"
+          "description": "open `file` in a new buffer and split window"
         },
         {
           "commands": [
             ":vsp file"
           ],
-          "description": "open a file in a new buffer and vertically split window"
+          "description": "open `file` in a new buffer and vertically split window"
         },
         {
           "modifiers": [
@@ -801,7 +805,7 @@
           "commands": [
             "wq"
           ],
-          "description": "quit a window"
+          "description": "quit window"
         },
         {
           "modifiers": [
@@ -819,7 +823,7 @@
           "commands": [
             "wh"
           ],
-          "description": "move cursor to the left window (vertical split)"
+          "description": "move cursor to the left window"
         },
         {
           "modifiers": [
@@ -828,7 +832,7 @@
           "commands": [
             "wl"
           ],
-          "description": "move cursor to the right window (vertical split)"
+          "description": "move cursor to the right window"
         },
         {
           "modifiers": [
@@ -837,7 +841,7 @@
           "commands": [
             "wj"
           ],
-          "description": "move cursor to the window below (horizontal split)"
+          "description": "move cursor to the window below"
         },
         {
           "modifiers": [
@@ -846,7 +850,7 @@
           "commands": [
             "wk"
           ],
-          "description": "move cursor to the window above (horizontal split)"
+          "description": "move cursor to the window above"
         }
       ]
     },
@@ -855,9 +859,10 @@
       "items": [
         {
           "commands": [
-            ":tabnew or :tabnew file"
+            ":tabnew",
+            ":tabnew file"
           ],
-          "description": "open a file in a new tab"
+          "description": "open `file` in a new tab"
         },
         {
           "modifiers": [
@@ -866,25 +871,27 @@
           "commands": [
             "wT"
           ],
-          "description": "move the current split window into its own tab"
+          "description": "move current split window into its own tab"
         },
         {
           "commands": [
-            "gt or :tabnext or :tabn"
+            "gt",
+            ":tabn"
           ],
-          "description": "move to the next tab"
+          "description": "move to next tab"
         },
         {
           "commands": [
-            "gT or :tabprev or :tabp"
+            "gT",
+            ":tabp"
           ],
-          "description": "move to the previous tab"
+          "description": "move to previous tab"
         },
         {
           "commands": [
-            "#gt"
+            "3gt"
           ],
-          "description": "move to tab number #"
+          "description": "move to tab number `3`"
         },
         {
           "commands": [
@@ -894,21 +901,21 @@
         },
         {
           "commands": [
-            ":tabclose or :tabc"
+            ":tabc"
           ],
           "description": "close the current tab and all its windows"
         },
         {
           "commands": [
-            ":tabonly or :tabo"
+            ":tabo"
           ],
           "description": "close all tabs except for the current one"
         },
         {
           "commands": [
-            ":tabdo command"
+            ":tabdo `command`"
           ],
-          "description": "run the <code>command</code> on all tabs (e.g. <code>:tabdo q</code> – closes all opened tabs)"
+          "description": "run `command` on all tabs"
         }
       ]
     }
