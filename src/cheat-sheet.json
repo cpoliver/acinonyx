@@ -325,8 +325,11 @@
           "description": "undo"
         },
         {
+          "modifiers": [
+            "ctrl"
+          ],
           "commands": [
-            "Ctrl + r"
+            "r"
           ],
           "description": "redo"
         },
@@ -360,8 +363,11 @@
           "description": "move to other end of marked area"
         },
         {
+          "modifiers": [
+            "ctrl"
+          ],
           "commands": [
-            "Ctrl + v"
+            "v"
           ],
           "description": "start visual block mode"
         },
@@ -771,50 +777,74 @@
           "description": "open a file in a new buffer and vertically split window"
         },
         {
+          "modifiers": [
+            "ctrl"
+          ],
           "commands": [
-            "Ctrl + ws"
+            "ws"
           ],
           "description": "split window"
         },
         {
+          "modifiers": [
+            "ctrl"
+          ],
           "commands": [
-            "Ctrl + ww"
+            "ww"
           ],
           "description": "switch windows"
         },
         {
+          "modifiers": [
+            "ctrl"
+          ],
           "commands": [
-            "Ctrl + wq"
+            "wq"
           ],
           "description": "quit a window"
         },
         {
+          "modifiers": [
+            "ctrl"
+          ],
           "commands": [
-            "Ctrl + wv"
+            "wv"
           ],
           "description": "split window vertically"
         },
         {
+          "modifiers": [
+            "ctrl"
+          ],
           "commands": [
-            "Ctrl + wh"
+            "wh"
           ],
           "description": "move cursor to the left window (vertical split)"
         },
         {
+          "modifiers": [
+            "ctrl"
+          ],
           "commands": [
-            "Ctrl + wl"
+            "wl"
           ],
           "description": "move cursor to the right window (vertical split)"
         },
         {
+          "modifiers": [
+            "ctrl"
+          ],
           "commands": [
-            "Ctrl + wj"
+            "wj"
           ],
           "description": "move cursor to the window below (horizontal split)"
         },
         {
+          "modifiers": [
+            "ctrl"
+          ],
           "commands": [
-            "Ctrl + wk"
+            "wk"
           ],
           "description": "move cursor to the window above (horizontal split)"
         }
@@ -830,8 +860,11 @@
           "description": "open a file in a new tab"
         },
         {
+          "modifiers": [
+            "ctrl"
+          ],
           "commands": [
-            "Ctrl + wT"
+            "wT"
           ],
           "description": "move the current split window into its own tab"
         },
