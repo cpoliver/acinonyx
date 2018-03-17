@@ -2,6 +2,7 @@
   align-items: baseline;
   align-self: flex-start;
   display: flex;
+  margin: .5rem;
 }
 
 .c-item__description {
