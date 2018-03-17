@@ -1,5 +1,6 @@
 .c-cheat-sheet {
-  background: #222;
+  background: #0B2830;
+  padding: 2rem;
 }
 
 .c-cheat-sheet__title {
@@ -10,6 +11,6 @@
 .c-cheat-sheet__contents {
   display: grid;
   /* grid-auto-flow: row; */
-  grid-gap: 1rem;
+  grid-gap: 2rem;
   grid-template-columns: repeat(3, 1fr);
 }

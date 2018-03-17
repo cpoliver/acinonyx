@@ -4,7 +4,7 @@
 
 .c-app__header {
   align-items: baseline;
-  background-color: #111;
+  background-color: #082026;
   color: white;
   display: flex;
   justify-content: center;
@@ -12,8 +12,9 @@
 }
 
 .c-app__title {
-  padding: .2rem 1rem;
+  font-size: 1.3rem;
   letter-spacing: .2rem;
+  padding: .2rem 1rem;
   text-transform: uppercase;
 }
 

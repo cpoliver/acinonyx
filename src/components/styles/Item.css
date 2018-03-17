@@ -4,8 +4,13 @@
   display: flex;
 }
 
+.c-item__description {
+  display: inline-flex;
+  flex: 1;
+  text-transform: capitalize;
+}
+
 .c-item__keys {
-  min-width: 12rem;
   justify-self: flex-end;
 }
 
@@ -16,9 +21,9 @@
 }
 
 .c-item__modifiers > pre {
-  background: #eee;
-  color: #000;
-  margin: .25rem 0 .5rem 1rem;
+  box-shadow: inset 0px 0px 0px 2px #CC6400;
+  border-radius: 4px;
+  margin: .25rem -.5rem .5rem 1rem;
   padding: .5rem;
 }
 
@@ -29,20 +34,9 @@
 }
 
 .c-item__command > pre {
-  background: #000;
+  background: #CC6400;
+  border-radius: 4px;
   color: #eee;
   margin: .25rem .5rem;
   padding: .5rem;
 }
-
-.c-item__description {
-  display: inline-flex;
-}
-
-.c-item__description > pre {
-  background: #000;
-  color: #eee;
-  margin: -.1rem .5rem;
-  padding: .15rem;
-}
-
