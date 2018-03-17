@@ -1,18 +1,13 @@
-.c-app {
-  color: lightgrey;
-}
-
 .c-app__header {
   align-items: baseline;
-  background-color: #082026;
-  color: white;
+  background-color: #071B20;
   display: flex;
   justify-content: center;
   padding: .25rem 1rem;
 }
 
 .c-app__title {
-  font-size: 1.3rem;
+  color: #FF7D00;
   letter-spacing: .2rem;
   padding: .2rem 1rem;
   text-transform: uppercase;
