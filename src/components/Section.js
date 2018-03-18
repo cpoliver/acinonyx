@@ -32,11 +32,17 @@ const Section = ({ heading, subsections, items, span = 10 }) => (
   </div>
 );
 
-const SectionShape = {
-  heading: PropTypes.string.isRequired,
-  items: PropTypes.arrayOf(ItemShape).isRequired
+const SubsectionShape = {
+  subheading: PropTypes.string.isRequired,
+  items: PropTypes.arrayOf(PropTypes.shape(ItemShape))
 };
 
-Section.propTypes = PropTypes.shape(SectionShape);
+const SectionShape = {
+  heading: PropTypes.string.isRequired,
+  items: PropTypes.arrayOf(PropTypes.shape(ItemShape)),
+  subsection: PropTypes.arrayOf(SubsectionShape)
+};
+
+Section.propTypes = SectionShape;
 
 export { Section, SectionShape };

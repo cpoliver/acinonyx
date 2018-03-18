@@ -21,10 +21,12 @@ const Item = ({ modifiers = [], commands, description }) => (
 );
 
 const ItemShape = {
-  command: PropTypes.string.isRequired,
+  commands: PropTypes.arrayOf(PropTypes.string).isRequired,
+  modifiers: PropTypes.arrayOf(PropTypes.string),
+  hint: PropTypes.string,
   description: PropTypes.string.isRequired
 };
 
-Item.propTypes = PropTypes.shape(ItemShape);
+Item.propTypes = ItemShape;
 
 export { Item, ItemShape };

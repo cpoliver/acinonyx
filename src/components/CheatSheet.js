@@ -19,9 +19,9 @@ const CheatSheet = ({ title, sections }) => (
 
 const CheatSheetShape = {
   title: PropTypes.string.isRequired,
-  sections: PropTypes.arrayOf(SectionShape).isRequired
+  sections: PropTypes.arrayOf(PropTypes.shape(SectionShape)).isRequired
 };
 
-CheatSheet.propTypes = PropTypes.shape(CheatSheetShape);
+CheatSheet.propTypes = CheatSheetShape;
 
 export { CheatSheet, CheatSheetShape };
