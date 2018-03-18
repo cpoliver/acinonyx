@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { isEmpty, length, map, pipe, prop, reduce, sum } from 'ramda';
+import { isEmpty, reduce } from 'ramda';
 
 import { mapWithIndex } from '../helpers';
 import { Item, ItemShape } from './Item';
@@ -8,12 +8,11 @@ import { Item, ItemShape } from './Item';
 import './styles/Section.css';
 
 const calculateSpan = ({ heading, items, subsections = [] }) => {
-  const countItems = pipe(prop('items'), length);
-  const summer = pipe(map, sum);
+  const countItems = (acc, cur) => acc + cur.items.length;
 
   return isEmpty(subsections) ?
     items.length + 1 :
-    subsections.length + 1 + summer(countItems, subsections);
+    subsections.length + 1 + reduce(countItems, 0, subsections);
 };
 
 const renderItem = (item, key) => <Item {...item} key={key} />;
