@@ -670,7 +670,8 @@
           "commands": [
             "\\vpattern"
           ],
-          "description": "very magic mode: non-alphanumeric characters are interpreted as regex symbols (no escaping needed)"
+          "description": "very magic mode",
+          "hint": "non-alphanumeric characters are interpreted as regex symbols (no escaping needed)"
         },
         {
           "commands": [
