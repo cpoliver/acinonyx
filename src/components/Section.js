@@ -8,17 +8,12 @@ import { Item, ItemShape } from './Item';
 import './styles/Section.css';
 
 const calculateSpan = ({ heading, items, subsections = [] }) => {
-  let _return;
-  if (isEmpty(subsections)) {
-    _return = items.length + 1;
-  } else {
-    const countItems = pipe(prop('items'), length);
-    const summer = pipe(map, sum)
+  const countItems = pipe(prop('items'), length);
+  const summer = pipe(map, sum);
 
-    _return = subsections.length + 1 + summer(countItems, subsections)
-  }
-
-  return _return;
+  return isEmpty(subsections) ?
+    items.length + 1 :
+    subsections.length + 1 + summer(countItems, subsections);
 };
 
 const renderItem = (item, key) => <Item {...item} key={key} />;
