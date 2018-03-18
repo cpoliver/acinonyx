@@ -12,7 +12,7 @@ const calculateSpan = ({ heading, items, subsections = [] }) => {
 
   return isEmpty(subsections) ?
     items.length + 1 :
-    subsections.length + 1 + reduce(countItems, 0, subsections);
+    subsections.length + reduce(countItems, 0, subsections);
 };
 
 const renderItem = (item, key) => <Item {...item} key={key} />;
@@ -24,7 +24,7 @@ const renderSubsection = ({ subheading, items }, key) => (
   </div>
 );
 
-const Section = ({ heading, subsections, items, span = 10 }) => (
+const Section = ({ heading, subsections, items }) => (
   <div className="c-section" style={{ gridRow: `span ${calculateSpan({ heading, items, subsections })}` }}>
     <h2 className="c-section__heading">{ heading }</h2>
     { subsections ? mapWithIndex(renderSubsection, subsections) : mapWithIndex(renderItem, items) }

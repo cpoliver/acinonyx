@@ -1,8 +1,10 @@
 .c-item {
-  align-items: baseline;
+  align-items: center;
   align-self: flex-start;
   display: flex;
   margin: .5rem;
+
+  height: 2rem;
 }
 
 .c-item__description {
@@ -16,16 +18,13 @@
 }
 
 .c-item__modifiers {
-  align-items: baseline;
   display: inline-flex;
-  margin-right: .5rem;
 }
 
 .c-item__modifiers > pre {
   background: #DDE3E5;
   border-radius: 4px;
   color: #071B20;
-  margin: .25rem -.5rem .5rem 1rem;
   padding: .5rem;
 }
 
@@ -39,6 +38,6 @@
   background: #071B20;
   border-radius: 4px;
   color: #eee;
-  margin: .25rem .5rem;
+  margin: 0 .5rem;
   padding: .5rem;
 }
