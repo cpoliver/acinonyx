@@ -14,6 +14,7 @@
 .c-subsection__heading {
   color: #4CD8FF;
   font-weight: 100;
+  margin-bottom: .5rem;
   margin-top: 2rem;
   text-transform: uppercase;
 }
