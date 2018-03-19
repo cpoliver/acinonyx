@@ -12,5 +12,29 @@
   display: grid;
   /* grid-auto-rows: 2rem; */
   grid-gap: 2rem;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(1, 1fr);
+}
+
+@media (min-width: 1200px) {
+  .c-cheat-sheet__contents {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1900px) {
+  .c-cheat-sheet__contents {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 2500px) {
+  .c-cheat-sheet__contents {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (min-width: 2900px) {
+  .c-cheat-sheet__contents {
+    grid-template-columns: repeat(5, 1fr);
+  }
 }
