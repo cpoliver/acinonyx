@@ -21,7 +21,7 @@
   display: inline-flex;
 }
 
-.c-item__modifiers > pre {
+.c-item__modifiers pre {
   background: #DDE3E5;
   border-radius: 4px;
   color: #071B20;
@@ -31,13 +31,12 @@
 .c-item__command {
   align-items: baseline;
   display: inline-flex;
-  margin-right: .5rem;
 }
 
-.c-item__command > pre {
+.c-item__command pre {
   background: #071B20;
   border-radius: 4px;
   color: #eee;
-  margin: 0 .5rem;
+  margin-left: .5rem;
   padding: .5rem;
 }
