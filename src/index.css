@@ -6,6 +6,7 @@ body {
   padding: 0;
   font-family: 'Open Sans', sans-serif;
   font-size: .8rem;
+  zoom: 1.25;
 }
 
 h1, h2, h3 {
