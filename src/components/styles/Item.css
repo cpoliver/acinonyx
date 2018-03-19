@@ -10,7 +10,6 @@
   display: inline-flex;
   flex: 1;
   min-width: 0;
-  text-transform: capitalize;
 }
 
 .c-item__description span {
@@ -22,6 +21,10 @@
 .c-item__description span:hover {
   overflow: visible;
   white-space: normal;
+}
+
+.c-item__description span::first-letter {
+  text-transform: capitalize;
 }
 
 .c-item__keys {
