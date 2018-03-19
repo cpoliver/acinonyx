@@ -52,3 +52,16 @@
   margin-left: 1rem;
   padding: .5rem;
 }
+
+.u-direction {
+  opacity: .75;
+}
+
+.u-code {
+  border-radius: 4px;
+  border: 1px dotted gray;
+  font-family: monospace;
+  margin: .25rem;
+  opacity: .75;
+  padding: .25rem;
+}

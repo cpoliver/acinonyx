@@ -1,12 +1,15 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { replace } from 'ramda';
+import { pipe, replace } from 'ramda';
 
 import { mapWithIndex } from '../helpers';
 
 import './styles/Item.css';
 
-const formatCode = replace(/code/g, 'pre');
+const parseItalics = replace(/\{(.+?)\}/g, '<span class="u-direction">$1</span>');
+const parsePre = replace(/`(.+?)`/g, '<span class="u-code">$1</span>');
+
+const formatCode = pipe(parseItalics, parsePre);
 
 const renderPre = className => (item, key) => (
   <div className={className}>
@@ -19,7 +22,9 @@ const renderCommand = renderPre('c-item__command');
 
 const Item = ({ modifiers = [], commands, description }) => (
   <div className="c-item">
-    <div className="c-item__description" dangerouslySetInnerHTML={{ __html: formatCode(description) }}></div>
+    <div className="c-item__description">
+      <span dangerouslySetInnerHTML={{ __html: formatCode(description) }}></span>
+    </div>
     <div className="c-item__keys">
       <div className="c-item__modifiers">{ mapWithIndex(renderModifier, modifiers) }</div>
       <div className="c-item__commands">{ mapWithIndex(renderCommand, commands) }</div>
