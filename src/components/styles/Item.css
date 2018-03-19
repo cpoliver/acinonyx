@@ -9,7 +9,19 @@
 .c-item__description {
   display: inline-flex;
   flex: 1;
+  min-width: 0;
   text-transform: capitalize;
+}
+
+.c-item__description span {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.c-item__description span:hover {
+  overflow: visible;
+  white-space: normal;
 }
 
 .c-item__keys {
